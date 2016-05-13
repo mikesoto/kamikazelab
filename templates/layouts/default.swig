@@ -51,6 +51,9 @@
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-left">
+							
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
 							{%- for link in navLinks -%}
 								{%- set linkClass = '' -%}
 								{%- if link.key == section -%}
@@ -60,16 +63,6 @@
 									<a href="{{ link.href }}">{{ link.label }}</a>
 								</li>
 							{%- endfor %}
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							{% if user -%}
-								{%- if user.canAccessKeystone -%}
-									<li><a href="/keystone">Open Keystone</a></li>
-								{%- endif -%}
-								<li><a href="/keystone/signout">Sign Out</a></li>
-							{%- else -%}
-								<li><a href="/keystone/signin">Sign In</a></li>
-							{%- endif %}
 						</ul>
 					</div>
 				</div>
