@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<h1>{{ data.proyecto.title }}</h1>
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et tristique nibh."</p>
+				<p>{{ data.proyecto.content.brief | safe }}</p>
 			</div>
 			<div class="col-sm-6">
 				<img src="{{ data.proyecto._.image_primary.fit(530,450) }}" class="img-responsive">
