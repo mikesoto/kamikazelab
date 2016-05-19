@@ -1,0 +1,26 @@
+.home-intro{
+	height:500px;
+	padding-top:150px;
+	background-color:#333;
+	background-image:url('/images/animated/tumblr_static_header-gif2.gif');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#fff;
+	margin-top:-30px;
+	overflow:hidden;
+	.intro-content{
+		margin-top:10px;
+		img{
+			margin-bottom:20px;
+		}
+		.intro-text{
+			font-size:24px;
+			max-width:650px;
+			margin:10px auto;
+			background-color:rgba(0,0,0,0.8);
+			padding:20px;
+			border-radius:8px;
+		}
+	}
+}

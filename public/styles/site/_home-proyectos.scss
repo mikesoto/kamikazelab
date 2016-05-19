@@ -1,0 +1,122 @@
+.home-proyectos{
+	height:400px;
+	.header{
+		background-color:#C41F25;
+		height:170px;
+		padding-top:50px;
+		padding-left:60px;
+		color:#fff;
+		font-weight:bold;
+		margin-top:-2px;
+	}
+	.proyectos-container{
+		.proyecto{
+			overflow:hidden;
+		}
+		.proyecto-content{
+			padding:30px;
+			width:100%;
+		}
+		.proyecto-tall1{
+			position:relative;
+			background-color:#F16532;
+			height:500px;
+			img{
+				margin:0px auto;
+				width:90%;
+				height:auto;
+			}
+		}
+		.proyecto-wide1{
+			position:relative;
+			background-color:#8EB4BD;
+			height:250px;
+			img{
+				float:right;
+				margin:-30px 40px 0px 0px;
+				width:340px;
+				height:auto;
+			}
+		}
+		.proyecto-small-left1{
+			background-color:#CFCBD2;
+			height:250px;
+			img{
+				float:right;
+				margin-right:-45px;
+				margin-top:-20px;
+			}
+		}
+		.proyecto-small-right1{
+			background-color:#0F4C81;
+			height:250px;
+			img{
+				float:right;
+				margin-right:-45px;
+				margin-top:-20px;
+			}
+		}
+		.proyecto-divider{
+			padding-left:0px;
+			padding-right:0px;
+		}
+		.proyecto-tall2{
+			background-color:#F16532;
+			height:500px;
+			img{
+				margin:0px auto;
+				width:90%;
+				height:auto;
+			}
+		}
+		.proyecto-wide2{
+			background-color:#BF2B49;
+			height:250px;
+			img{
+				float:right;
+				margin:-30px 40px 0px 0px;
+				width:340px;
+				height:auto;
+			}
+		}
+		.proyecto-small-left2{
+			background-color:#CFCBD2;
+			height:250px;
+			img{
+				float:right;
+				margin-right:-45px;
+				margin-top:-20px;
+			}
+		}
+		.proyecto-small-right2{
+			background-color:#0F4C81;
+			height:250px;
+			img{
+				float:right;
+				margin-right:-45px;
+				margin-top:-20px;
+			}
+		}
+		.proyecto-title-container{
+			position:absolute;
+			bottom: 35px;
+			left:40px;
+			.proyecto-title{
+				text-transform: uppercase;
+				color:#fff;
+				max-width:250px;
+			}
+			.btn-proyecto{
+				background-color:transparent;
+				border:thin solid #fff;
+				color:#fff;
+				text-transform: uppercase;
+				border-radius:0px;
+				&:hover{
+					background-color:rgba(255,255,255,0.4);
+				}
+			}
+		}
+			
+	}
+}

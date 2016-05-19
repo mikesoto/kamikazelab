@@ -32,6 +32,43 @@
 						{% endfor %}
 					{% endif %}
 				</div>
+				<div class="col-sm-12">
+					{% if data.proyectos.totalPages > 1 %}
+						<ul class="pagination">
+							{% if data.proyectos.previous %}
+								<li>
+									<a href="?page={{ data.proyectos.previous }}">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</a>
+								</li>
+							{% else %}
+								<li class="disabled">
+									<a href="?page=1">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</a>
+								</li>
+                                                              {% endif %}
+								{% for p in data.proyectos.pages %}
+									<li class="{% if data.proyectos.currentPage == p %}active{% endif %}">
+										<a href="?page={% if p == "..." %}{% if i %}{{ data.proyectos.totalPages }}{% else %}1{% endif %}{% else %}{{ p }}{% endif %}">{{ p }}</a>
+									</li>
+								{% endfor %}
+							{% if data.proyectos.next %}
+								<li>
+									<a href="?page={{ data.proyectos.next }}">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</a>
+								</li>
+							{% else %}
+								<li class="disabled">
+									<a href="?page={{ data.proyectos.totalPages }}">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</a>
+								</li>
+							{% endif %}
+						</ul>
+					{% endif %}
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,26 @@
+.home-agencia{
+	height:500px;
+	.agencia-left{
+		height:500px;
+		background-color:#D92830;
+		padding-top:150px;
+		color:#fff;
+		.fa.fa-rocket{
+			font-size:80px;
+		}
+	}
+	.agencia-right{
+		height:500px;
+		background-color:#C41F25;
+		padding-top:150px;
+		color:#fff;
+		.fa.fa-flask{
+			font-size:80px;
+		}
+	}
+	.agencia-text{
+		max-width:500px;
+		margin:20px auto;
+		font-size:16px;		
+	}
+}

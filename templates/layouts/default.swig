@@ -9,6 +9,13 @@
 
 		<title>{{ title|default("kamikazelab") }}</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		
+
+		
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+
 
 		{# Customise the stylesheet for your site by editing /public/styles/site.sass #}
 		<link href="/styles/site.css" rel="stylesheet">
@@ -38,7 +45,7 @@
 
 			{# Customise your site"s navigation by changing the navLinks Array in ./routes/middleware.js
 			   ... or completely change this header to suit your design. #}
-			<div role="navigation" class="navbar navbar-default">
+			<div role="navigation" class="navbar navbar-default navbar-fixed-top navbar-main">
 				<div class="container-fluid">
 					<div class="navbar-header">
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,7 +54,9 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="/">kamikazelab</a>
+						<a class="navbar-brand" href="/">
+							<img src="/images/logo-kamikazelab.png" class="img img-responsive">
+						</a>
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-left">
@@ -87,9 +96,8 @@
 		</div>
 
 		{# FOOTER #}
-		<div id="footer" class="container">
-			{# You don"t _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it! #}
-			<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
+		<div class="footer">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et tristique nibh. Aliquam nec sodales arcu, vel sollicitudin risus. Nulla facilisi. Donec ultrices nisi purus, ac aliquet dolor fermentum vitae. Ut ornare maximus tempor. Sed interdum et massa vitae suscipit.
 		</div>
 
 		{# JAVASCRIPT #}
@@ -110,7 +118,7 @@
 		{%- endif -%}
 
 		{# Add scripts that are globally required by your site here. #}
-
+		<script src="js/main.js"></script>
 		{# Include template-specific javascript files by extending the js block #}
 		{%- block js -%}{%- endblock -%}
 	</body>

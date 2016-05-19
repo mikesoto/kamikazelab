@@ -5821,16 +5821,225 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.home-intro {
+  height: 500px;
+  padding-top: 150px;
+  background-color: #333;
+  background-image: url("/images/animated/tumblr_static_header-gif2.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-top: -30px;
+  overflow: hidden; }
+  .home-intro .intro-content {
+    margin-top: 10px; }
+    .home-intro .intro-content img {
+      margin-bottom: 20px; }
+    .home-intro .intro-content .intro-text {
+      font-size: 24px;
+      max-width: 650px;
+      margin: 10px auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 8px; }
+
+.home-agencia {
+  height: 500px; }
+  .home-agencia .agencia-left {
+    height: 500px;
+    background-color: #D92830;
+    padding-top: 150px;
+    color: #fff; }
+    .home-agencia .agencia-left .fa.fa-rocket {
+      font-size: 80px; }
+  .home-agencia .agencia-right {
+    height: 500px;
+    background-color: #C41F25;
+    padding-top: 150px;
+    color: #fff; }
+    .home-agencia .agencia-right .fa.fa-flask {
+      font-size: 80px; }
+  .home-agencia .agencia-text {
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 16px; }
+
+.que-hacemos .header {
+  height: 180px;
+  background-color: #000;
+  color: #fff;
+  padding: 50px; }
+
+.que-hacemos .sections-container {
+  background-color: #000;
+  height: 500px; }
+  .que-hacemos .sections-container .section {
+    transition: opacity .4s;
+    opacity: 0.3;
+    height: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.que-hacemos .section-text {
+  font-weight: bold;
+  margin-top: -170px;
+  color: #fff; }
+
+.que-hacemos .section:hover {
+  opacity: 1;
+  cursor: pointer; }
+
+.que-hacemos #estrategia {
+  background-image: url("/images/hacemos/que-hacemos1-hover.jpg"); }
+
+.que-hacemos #experiencia {
+  background-image: url("/images/hacemos/que-hacemos2-hover.jpg"); }
+
+.que-hacemos #desarrollo {
+  background-image: url("/images/hacemos/que-hacemos3-hover.jpg"); }
+
+.que-hacemos #randd {
+  background-image: url("/images/hacemos/que-hacemos4-hover.jpg"); }
+
+.que-hacemos .section-description {
+  display: none; }
+  .que-hacemos .section-description .description-icon {
+    font-size: 60px; }
+  .que-hacemos .section-description .description-title {
+    font-size: 24px;
+    font-weight: bold; }
+  .que-hacemos .section-description .description-text {
+    font-size: 16px; }
+
+.que-hacemos #randd-description .description-icon {
+  padding-top: 10px;
+  font-size: 42px; }
+
+.que-hacemos #desarrollo-description .description-icon {
+  padding-top: 10px;
+  font-size: 46px; }
+
+.home-proyectos {
+  height: 400px; }
+  .home-proyectos .header {
+    background-color: #C41F25;
+    height: 170px;
+    padding-top: 50px;
+    padding-left: 60px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: -2px; }
+  .home-proyectos .proyectos-container .proyecto {
+    overflow: hidden; }
+  .home-proyectos .proyectos-container .proyecto-content {
+    padding: 30px;
+    width: 100%; }
+  .home-proyectos .proyectos-container .proyecto-tall1 {
+    position: relative;
+    background-color: #F16532;
+    height: 500px; }
+    .home-proyectos .proyectos-container .proyecto-tall1 img {
+      margin: 0px auto;
+      width: 90%;
+      height: auto; }
+  .home-proyectos .proyectos-container .proyecto-wide1 {
+    position: relative;
+    background-color: #8EB4BD;
+    height: 250px; }
+    .home-proyectos .proyectos-container .proyecto-wide1 img {
+      float: right;
+      margin: -30px 40px 0px 0px;
+      width: 340px;
+      height: auto; }
+  .home-proyectos .proyectos-container .proyecto-small-left1 {
+    background-color: #CFCBD2;
+    height: 250px; }
+    .home-proyectos .proyectos-container .proyecto-small-left1 img {
+      float: right;
+      margin-right: -45px;
+      margin-top: -20px; }
+  .home-proyectos .proyectos-container .proyecto-small-right1 {
+    background-color: #0F4C81;
+    height: 250px; }
+    .home-proyectos .proyectos-container .proyecto-small-right1 img {
+      float: right;
+      margin-right: -45px;
+      margin-top: -20px; }
+  .home-proyectos .proyectos-container .proyecto-divider {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .home-proyectos .proyectos-container .proyecto-tall2 {
+    background-color: #F16532;
+    height: 500px; }
+    .home-proyectos .proyectos-container .proyecto-tall2 img {
+      margin: 0px auto;
+      width: 90%;
+      height: auto; }
+  .home-proyectos .proyectos-container .proyecto-wide2 {
+    background-color: #BF2B49;
+    height: 250px; }
+    .home-proyectos .proyectos-container .proyecto-wide2 img {
+      float: right;
+      margin: -30px 40px 0px 0px;
+      width: 340px;
+      height: auto; }
+  .home-proyectos .proyectos-container .proyecto-small-left2 {
+    background-color: #CFCBD2;
+    height: 250px; }
+    .home-proyectos .proyectos-container .proyecto-small-left2 img {
+      float: right;
+      margin-right: -45px;
+      margin-top: -20px; }
+  .home-proyectos .proyectos-container .proyecto-small-right2 {
+    background-color: #0F4C81;
+    height: 250px; }
+    .home-proyectos .proyectos-container .proyecto-small-right2 img {
+      float: right;
+      margin-right: -45px;
+      margin-top: -20px; }
+  .home-proyectos .proyectos-container .proyecto-title-container {
+    position: absolute;
+    bottom: 35px;
+    left: 40px; }
+    .home-proyectos .proyectos-container .proyecto-title-container .proyecto-title {
+      text-transform: uppercase;
+      color: #fff;
+      max-width: 250px; }
+    .home-proyectos .proyectos-container .proyecto-title-container .btn-proyecto {
+      background-color: transparent;
+      border: thin solid #fff;
+      color: #fff;
+      text-transform: uppercase;
+      border-radius: 0px; }
+      .home-proyectos .proyectos-container .proyecto-title-container .btn-proyecto:hover {
+        background-color: rgba(255, 255, 255, 0.4); }
+
+body {
+  font-family: 'Raleway', sans-serif; }
+
 #header {
   margin-top: 30px; }
 
-#footer {
-  margin-top: 30px;
+.footer {
+  height: 200px;
+  padding: 40px;
   border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777; }
+  color: #fff;
+  background-image: url("/images/footer-bg.jpg"); }
 
 .gallery-image img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.navbar-main {
+  transition: all .4s;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 80px;
+  padding: 10px;
+  overflow: hidden;
+  margin-top: -80px; }
+  .navbar-main .navbar-brand img {
+    max-height: 23px; }
