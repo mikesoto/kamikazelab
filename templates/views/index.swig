@@ -11,6 +11,13 @@
 			</div>
 		</div>
 
+		<!-- video example  -->
+		<div class="row text-center home-agencia">
+			<h1>video variable example</h1>
+			video: {{ data.video.video.filename }}<br/>
+			mobile: {{ data.video.alt_image_mobile.filename}}<br/>
+			tablet: {{ data.video.alt_image_tablet.filename}}<br/>
+		</div>
 		<!-- Home Agencia Fold -->
 		<div class="row text-center home-agencia">
 			<div class="col-sm-6 agencia-left">
