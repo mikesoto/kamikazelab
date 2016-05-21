@@ -8,10 +8,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>{{ title|default("kamikazelab") }}</title>
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-		
+
+
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
@@ -41,11 +41,11 @@
 	<body>
 
 		{# HEADER #}
-		<div id="header" class="container">
+		<!-- <div id="header" class="container"> -->
 
 			{# Customise your site"s navigation by changing the navLinks Array in ./routes/middleware.js
 			   ... or completely change this header to suit your design. #}
-			<div role="navigation" class="navbar navbar-default navbar-fixed-top navbar-main">
+			<!-- <div role="navigation" class="navbar navbar-default navbar-fixed-top navbar-main">
 				<div class="container-fluid">
 					<div class="navbar-header">
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -60,7 +60,7 @@
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-left">
-							
+
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							{%- for link in navLinks -%}
@@ -76,10 +76,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		{# BODY #}
-		<div id="body">
+		<!-- <div id="body"> -->
 			{# NOTE:
 			   There is no .container wrapping class around body blocks to allow more flexibility in design.
 			   Remember to include it in your templates when you override the intro and content blocks! #}
@@ -93,12 +93,12 @@
 
 			{# The content block should contain the body of your template"s content #}
 			{%- block content -%}{%- endblock -%}
-		</div>
+		<!-- </div> -->
 
 		{# FOOTER #}
-		<div class="footer">
+		<!-- <div class="footer">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et tristique nibh. Aliquam nec sodales arcu, vel sollicitudin risus. Nulla facilisi. Donec ultrices nisi purus, ac aliquet dolor fermentum vitae. Ut ornare maximus tempor. Sed interdum et massa vitae suscipit.
-		</div>
+		</div> -->
 
 		{# JAVASCRIPT #}
 
@@ -109,7 +109,7 @@
 
 		{# Customise which Bootstrap javascript files are served by including
 			them specifically here, instead of bootstrap-3.3.5.min.js #}
-		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+		<!-- <script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script> -->
 
 		{# The KeystoneJS Content Editor provides support for ks-editable data attributes,
 			which generate links to edit content for users who can access Keystone #}
@@ -118,7 +118,8 @@
 		{%- endif -%}
 
 		{# Add scripts that are globally required by your site here. #}
-		<script src="js/main.js"></script>
+		<!-- <script src="js/main.js"></script> -->
+		<script src="js/fold.js"></script>
 		{# Include template-specific javascript files by extending the js block #}
 		{%- block js -%}{%- endblock -%}
 	</body>

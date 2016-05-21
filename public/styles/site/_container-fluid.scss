@@ -1,0 +1,79 @@
+.container-fluid {
+   .division {
+      .agency {
+         background-color: $rojo-a;
+      }
+      .lab {
+         background-color: $rojo-l;
+      }
+   }
+   .what-we-do {
+      background-color: $negro;
+      .text {
+         color: $blanco;
+      }
+   }
+   .areas {
+      .area {
+         background-color: $rojo-l;
+      }
+   }
+   .projects {
+      background-color: $gris-oscuro;
+      .title {
+         color: $blanco;
+      }
+   }
+}
+
+.container-fluid {
+   @include susy-breakpoint($tablet, $susy) {
+      @include span(12);
+      .division{
+         @include span(12);
+         .agency{
+            @include span(6);
+            height: 600px;
+         }
+         .lab {
+            @include span(6);
+            height: 600px;
+         }
+      }
+      .what-we-do {
+         @include span(12);
+         .text {
+            @include span(12);
+            height: 230px;
+            padding-top: 70px;
+            h2 {
+               @include pad(0.5,0.5);
+            }
+         }
+      }
+      .areas {
+         @include span(12);
+         .area {
+            @include gallery(3);
+            height: 200px;
+         }
+      }
+      .projects {
+         @include span(12);
+         .title {
+            @include span(12);
+            height: 230px;
+            padding-top: 70px;
+            h2 {
+               @include pad(0.5,0.5);
+            }
+         }
+         .grid-projects {
+            @include span(12);
+            .project {
+               
+            }
+         }
+      }
+   }
+}

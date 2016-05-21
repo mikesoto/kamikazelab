@@ -1,0 +1,20 @@
+{
+  "name": "kamikazelab",
+  "description": "",
+  "main": "keystone.js",
+  "authors": [
+    "kamikazelab"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mikesoto/kamikazelab",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "susy": "^2.2.12"
+  }
+}

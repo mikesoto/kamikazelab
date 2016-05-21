@@ -1,0 +1,105 @@
+.fold {
+   position: fixed;
+   left: 0;
+   top: 0;
+   height: 100%;
+   z-index: 99;
+   padding-top: 0;
+   overflow: hidden;
+   .video-wrapper {
+      height: 100%;
+      position: relative;
+   }
+   .background-video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      background-color: $negro;
+   }
+   .video-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: auto;
+      height: auto;
+      background-color: $negro;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+      filter: alpha(opacity=40);
+      -moz-opacity: 0.4;
+      -khtml-opacity: 0.4;
+      opacity: 0.4;
+   }
+   .fold-detail {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      .intro-text {
+         text-align: center;
+         color: $blanco;
+      }
+   }
+   .scroll-icon {
+      position: absolute;
+      left: 50%;
+      bottom: 50px;
+      margin-left: -26px;
+      width: 52px;
+      height: 52px;
+   }
+}
+
+.fold {
+   @include susy-breakpoint($tablet, $susy) {
+		@include span(12);
+      .video-wrapper {
+         @include span(12);
+      }
+      .background-video {
+         @include span(12);
+      }
+      .video-overlay {
+         @include span(12);
+      }
+      .fold-detail {
+         @include pad(1,1);
+         @include span(10);
+         margin-left: -41.6%;
+         margin-top: -10%;
+         .img-logo {
+            @include span(12);
+         }
+         .intro-text {
+            @include span(12);
+            padding-top: 0.5em;
+            font-size: 1.2rem;
+         }
+      }
+	}
+	// @include susy-breakpoint($desktop, $susy) {
+	// 	@include span(12);
+   //    .video-wrapper {
+   //       @include span(12);
+   //    }
+   //    .background-video {
+   //       @include span(12);
+   //    }
+   //    .video-overlay {
+   //       @include span(12);
+   //    }
+   //    .fold-detail {
+   //       @include pad(1.5,1.5);
+   //       @include span(9);
+   //       .img-logo {
+   //          @include span(12);
+   //       }
+   //       .intro-text {
+   //          @include span(12);
+   //          padding-top: 0.5em;
+   //          font-size: 2.2rem;
+   //       }
+   //    }
+	// }
+}
