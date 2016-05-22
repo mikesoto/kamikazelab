@@ -41,6 +41,10 @@
 	<body>
 
 		{# HEADER #}
+		<div class="menu-kamikaze-home">
+			<div class="logo">
+			</div></div>
+		</div>
 		<!-- <div id="header" class="container"> -->
 
 			{# Customise your site"s navigation by changing the navLinks Array in ./routes/middleware.js
@@ -96,9 +100,48 @@
 		<!-- </div> -->
 
 		{# FOOTER #}
-		<!-- <div class="footer">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et tristique nibh. Aliquam nec sodales arcu, vel sollicitudin risus. Nulla facilisi. Donec ultrices nisi purus, ac aliquet dolor fermentum vitae. Ut ornare maximus tempor. Sed interdum et massa vitae suscipit.
-		</div> -->
+		<div class="footer">
+			<div class="footer-wrapper">
+				<img src="images/footer-bg.jpg" class="img-footer">
+				<div class="footer-overlay">
+					<div class="schema">
+						<div class="title-footer">Encuéntranos</div>
+						<p>Juan Salvador Agraz #40.</p>
+						<p>Edificio Eurocenter.</p>
+						<p>Col. Lomas de Santa Fe.</p>
+						<p>México D.F.</p>
+						<p>C.P. 05109</p>
+						<p class="tel">t. 40 40 79 79</p>
+						<a href="https://goo.gl/maps/QQ9WX">Ir a Google Maps</a>
+					</div>
+					<div class="follow">
+						<div class="title-footer">Síguenos</div>
+						<div class="follow-icons">
+							<div class="single-follow-icon">
+								<a href="http://www.facebook.com/KamikazeLab" target="_blank">
+									<img src="images/facebook.png">
+								</a>
+							</div>
+							<div class="single-follow-icon">
+								<a href="http://twitter.com/KamikazeLab" target="_blank">
+									<img src="images/twitter.png">
+								</a>
+							</div>
+							<div class="single-follow-icon">
+								<a href="http://plus.google.com/114926256044013113957/about" target="_blank">
+									<img src="images/google.png">
+								</a>
+							</div>
+							<div class="single-follow-icon">
+								<a href="http://www.linkedin.com/company/kamikaze-lab" target="_blank">
+									<img src="images/linkedIn.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		{# JAVASCRIPT #}
 
@@ -120,6 +163,7 @@
 		{# Add scripts that are globally required by your site here. #}
 		<!-- <script src="js/main.js"></script> -->
 		<script src="js/fold.js"></script>
+		<script src="js/container-fluid.js"></script>
 		{# Include template-specific javascript files by extending the js block #}
 		{%- block js -%}{%- endblock -%}
 	</body>

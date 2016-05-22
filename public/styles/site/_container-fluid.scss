@@ -11,17 +11,86 @@
       background-color: $negro;
       .text {
          color: $blanco;
+         .strategy-hover {
+            display: none;
+         }
+         .experience-hover {
+            display: none;
+         }
+         .develop-hover {
+            display: none;
+         }
+         .rd-hover {
+            display: none;
+         }
       }
-   }
-   .areas {
-      .area {
-         background-color: $rojo-l;
+      .areas {
+         .area {
+            position: relative;
+            .img-hover {
+               display: none;
+            }
+            &:hover {
+               .img-normal {
+                  display: none;
+               }
+               .img-hover {
+                  display: block;
+               }
+            }
+         }
+         .area-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: auto;
+            z-index: 1;
+            &:hover{
+               opacity: 0;
+               cursor: pointer;
+            }
+            .area-text {
+               text-transform: uppercase;
+               color: $blanco;
+               position: absolute;
+               top: 50%;
+               text-align: center;
+            }
+         }
       }
    }
    .projects {
       background-color: $gris-oscuro;
       .title {
          color: $blanco;
+      }
+      .grid-projects {
+         background-color: $gris-oscuro;
+         .project {
+            position: relative;
+            overflow: hidden;
+            .name {
+               position: absolute;
+               color: $blanco;
+               text-transform: uppercase;
+               -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+               transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+            }
+            .goToProject {
+               position: absolute;
+               -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+               transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+               a {
+                  text-decoration: none;
+                  padding: 6px 10px;
+                  border: 1px solid #ffffff;
+                  text-transform: uppercase;
+                  color: $blanco;
+               }
+            }
+         }
       }
    }
 }
@@ -45,25 +114,68 @@
          .text {
             @include span(12);
             height: 230px;
-            padding-top: 70px;
-            h2 {
+            .default-text {
+               padding-top: 5%;
                @include pad(0.5,0.5);
+               font-size: 1.5rem;
+            }
+            .area-hover {
+               @include pad(0.5,0.5);
+               @include span(11);
+               .area-icon {
+                  @include span(3);
+               }
+               .content-area {
+                  @include span(9);
+                  .title-area {
+                     font-size: 1.3rem;
+                     text-transform: uppercase;
+                  }
+                  .content-text {
+                     font-size: 1.1rem;
+                  }
+               }
+            }
+            .strategy-hover {
+               padding-top: 2%;
+            }
+            .experience-hover{
+               padding-top: 5%;
+            }
+            .develop-hover{
+               padding-top: 5%;
+            }
+            .rd-hover {
+               padding-top: 5%;
             }
          }
-      }
-      .areas {
-         @include span(12);
-         .area {
-            @include gallery(3);
-            height: 200px;
+         .areas {
+            @include span(12);
+            .area {
+               @include gallery(3);
+               .img-normal {
+                  @include span(12);
+               }
+               .img-hover {
+                  @include span(12);
+               }
+            }
+            .area-overlay {
+               @include span(12);
+               .area-text {
+                  @include span(12);
+                  font-size: 1.4rem;
+                  margin-top: -5%;
+               }
+            }
          }
       }
       .projects {
          @include span(12);
          .title {
             @include span(12);
-            height: 230px;
-            padding-top: 70px;
+            height: 200px;
+            padding-top: 60px;
             h2 {
                @include pad(0.5,0.5);
             }
@@ -71,7 +183,45 @@
          .grid-projects {
             @include span(12);
             .project {
-               
+               @include gallery(4);
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 65px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .left {
+                  padding-top: 0.5em;
+                  padding-left: 0.5em;
+                  @include span(4);
+                  .img-agency {
+                     width: 45px;
+                     height: 45px;
+                  }
+               }
+               .right {
+                  @include span(8);
+                  .img-project {
+                     @include span(12);
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.3rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -30px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.1rem;
+               }
             }
          }
       }

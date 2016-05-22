@@ -1,13 +1,10 @@
 {% extends "../layouts/default.swig" %}
 
 {% block content %}
-		<div class="menu-kamikaze-home">
-			<div class="logo">
-			</div></div>
-		</div>
+		<!-- fold -->
 		<div class="fold">
-			<div class="video-wrapper	">
-				<video id="videoId" class="background-video" src="/images/animated/tumblr_static_header-gif2.gif" loop="" muted="" poster="/images/animated/tumblr_static_header-gif2.gif"></video>
+			<div class="video-wrapper">
+				<video id="videoId" class="background-video" src="/videos/{{ data.video.video.filename }}" autoplay="autoplay" loop="" muted="" poster=""></video>
 				<div class="video-overlay"></div>
 				<div class="fold-detail">
 					<img src="images/logo-kamikazelab-fold.png" class="img-logo">
@@ -31,16 +28,86 @@
 			<!-- what-we-do -->
 			<div class="what-we-do">
 				<div class="text">
-					<h2>¿QUÉ HACEMOS?</h2>
+					<h2 class="default-text">¿QUÉ HACEMOS?</h2>
+					<div class="strategy-hover area-hover">
+						<div class="area-icon">
+							<img src="images/hacemos/estrategia.png" alt="Icono del área de estrategia.">
+						</div>
+						<div class="content-area">
+							<div class="title-area">Estrategias</div>
+							<div class="content-text">
+								Creamos estrategias digitales para conectar con los consumidores de nuestras marcas.
+								<ul>
+									<li>Estrategias 360°</li>
+									<li>Estrategias de Contenido</li>
+									<li>Estrategias de Consultoría</li>
+									<li>Estrategias de Medios</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="experience-hover area-hover">
+						<div class="area-icon">
+							<img src="images/hacemos/experiencia.png" alt="Icono del área de experiencia.">
+						</div>
+						<div class="content-area">
+							<div class="title-area">Experiencias</div>
+							<div class="content-text">
+								Creamos las experiencias que nuestros clientes necesitan para comunicar su mensaje. Analizamos a los usuarios para entender sus procesos y crearles experiencias de acuerdo a sus usos de internet.
+							</div>
+						</div>
+					</div>
+					<div class="develop-hover area-hover">
+						<div class="area-icon">
+							<img src="images/hacemos/desarrollo.png" alt="Icono del área de desarrollo.">
+						</div>
+						<div class="content-area">
+							<div class="title-area">Desarrollos</div>
+							<div class="content-text">
+								Creamos plataformas inteligentes para generar soluciones por medio de sistemas digitalizados. Analizamos las tendencias y nuevos lenguajes para construir plataformas innovadoras.
+							</div>
+						</div>
+					</div>
+					<div class="rd-hover area-hover">
+						<div class="area-icon">
+							<img src="images/hacemos/rd.png" alt="Icono del área de performance.">
+						</div>
+						<div class="content-area">
+							<div class="title-area">Performance</div>
+							<div class="content-text">
+								Generamos mensajes clave para la audiencia que busca a nuestros clientes. Optimizamos diario para tener el mejor resultado y la mejor conversión.
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="areas">
-					<div class="area">
+					<div class="area area-hover1">
+						<img src="images/hacemos/que-hacemos1.jpg" class="img-normal" alt="Área de Estrategia">
+						<img src="images/hacemos/que-hacemos1-hover.jpg" class="img-hover" alt="Área de Estrategia">
+						<div class="area-overlay">
+							<div class="area-text">Estrategias</div>
+						</div>
 					</div>
-					<div class="area">
+					<div class="area area-hover2">
+						<img src="images/hacemos/que-hacemos2.jpg" class="img-normal" alt="Área de Experiencia">
+						<img src="images/hacemos/que-hacemos2-hover.jpg" class="img-hover" alt="Área de Experiencia">
+						<div class="area-overlay">
+							<div class="area-text">Experiencias</div>
+						</div>
 					</div>
-					<div class="area">
+					<div class="area area-hover3">
+						<img src="images/hacemos/que-hacemos3.jpg" class="img-normal" alt="Área de Desarrollo">
+						<img src="images/hacemos/que-hacemos3-hover.jpg" class="img-hover" alt="Área de Desarrollo">
+						<div class="area-overlay">
+							<div class="area-text">Desarrollos</div>
+						</div>
 					</div>
-					<div class="area">
+					<div class="area area-hover4">
+						<img src="images/hacemos/que-hacemos4.jpg" class="img-normal" alt="Área de R&amp;D">
+						<img src="images/hacemos/que-hacemos4-hover.jpg" class="img-hover" alt="Área de R&amp;D">
+						<div class="area-overlay">
+							<div class="area-text">R&amp;D/div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -52,15 +119,20 @@
 					{% if data.proyectos.results.length %}
 						{% for proyecto in data.proyectos.results %}
 							<div class="project">
+								<div class="left">
+									<img src="images/agencia.png" class="img-agency" alt="Icono de la agencia">
+								</div>
+								<div class="right">
+									<img src="{{ proyecto._.image_primary.fit(300,300) }}" class="img-project" alt="Imagen principal del proyecto">
+								</div>
+								<div class="name">{{ proyecto.title }}</div>
+								<div class="goToProject">
+									<a href="/proyecto/{{ proyecto.slug }}">Ir a Proyecto</a>
+								</div>
 							</div>
 						{% endfor %}
 					{% endif %}
 				</div>
-				<!-- {% if data.proyectos.results.length %}
-			      {% for proyecto in data.proyectos.results %}
-					<h3 class="proyecto-title">{{ proyecto.title }}</h3>
-			      {% endfor %}
-			   {% endif %} -->
 			</div>
 		</div>
 

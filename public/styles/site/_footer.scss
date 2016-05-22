@@ -1,0 +1,97 @@
+.footer {
+   height: 100%;
+   overflow: hidden;
+   .footer-wrapper {
+      position: relative;
+   }
+   .img-footer {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+   }
+   .footer-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: auto;
+      height: auto;
+   }
+   .title-footer {
+      color: $blanco;
+      text-transform: uppercase;
+   }
+   .schema {
+      p {
+         color: $blanco;
+         margin: 0;
+      }
+      a {
+         color: $blanco;
+      }
+   }
+   .follow {
+      .follow-icons {
+         .single-follow-icon {
+            float: left;
+            &:hover {
+               background-color: rgba(255, 255, 255, 0.1);
+            }
+            a {
+               text-decoration: none;
+            }
+         }
+      }
+   }
+}
+
+.footer {
+   @include susy-breakpoint($tablet, $susy) {
+      @include span(12);
+      .footer-wrapper {
+         @include span(12);
+      }
+      .img-footer {
+         @include span(12);
+      }
+      .footer-overlay {
+         @include span(12);
+      }
+      .schema {
+         @include span(3 first);
+         padding-top: 5%;
+         padding-left: 3%;
+         p {
+            font-size: 1rem;
+         }
+         .tel {
+            margin-bottom: 10%;
+         }
+      }
+      .follow {
+         @include span(4 last);
+         padding-top: 5%;
+         .follow-icons {
+            .single-follow-icon {
+               height: 46px;
+               margin-right: 25px;
+               -moz-border-radius: 23px;
+               -webkit-border-radius: 23px;
+               border-radius: 23px;
+               -khtml-border-radius: 23px;
+               a {
+                  img {
+                     height: 46px;
+                  }
+               }
+            }
+         }
+      }
+      .title-footer {
+         font-size: 1.5rem;
+         margin-bottom: 15%;
+      }
+   }
+}
