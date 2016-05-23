@@ -1,10 +1,41 @@
 .container-fluid {
    .division {
-      .agency {
-         background-color: $rojo-a;
+      height: 100%;
+      overflow: hidden;
+      .division-wrapper {
+         position: relative;
       }
-      .lab {
-         background-color: $rojo-l;
+      .img-division {
+         min-width: 100%;
+         min-height: 100%;
+         width: auto;
+         height: auto;
+      }
+      .division-overlay {
+         position: absolute;
+         left: 0;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         width: auto;
+         height: auto;
+         .agency {
+            .content-agency {
+               text-align: center;
+            }
+         }
+         .lab {
+            .content-lab {
+               text-align: center;
+            }
+         }
+         h2 {
+            text-transform: uppercase;
+            color: $blanco;
+         }
+         p {
+            color: $blanco;
+         }
       }
    }
    .what-we-do {
@@ -96,17 +127,45 @@
 }
 
 .container-fluid {
-   @include susy-breakpoint($tablet, $susy) {
+   @include susy-breakpoint($phone, $susy) {
       @include span(12);
       .division{
          @include span(12);
-         .agency{
-            @include span(6);
-            height: 600px;
+         .division-wrapper {
+            @include span(12);
          }
-         .lab {
-            @include span(6);
-            height: 600px;
+         .img-division {
+            @include span(12);
+         }
+         .division-overlay {
+            @include span(12);
+            .agency {
+               @include span(6);
+               padding-top: 15%;
+               .content-agency {
+                  @include pad(2,2);
+                  @include span(8);
+               }
+            }
+            .lab {
+               @include span(6);
+               padding-top: 15%;
+               .content-lab {
+                  @include pad(6,2);
+                  @include span(12);
+               }
+            }
+            .icon {
+               width: 120px;
+               height: 120px;
+               margin-bottom: 5%;
+            }
+            h2 {
+               font-size: 1.65rem;
+            }
+            p {
+               font-size: 1.2rem;
+            }
          }
       }
       .what-we-do {
@@ -123,9 +182,15 @@
                @include pad(0.5,0.5);
                @include span(11);
                .area-icon {
+                  padding-left: 5%;
                   @include span(3);
+                  img {
+                     width: 60px;
+                     height: 60px;
+                  }
                }
                .content-area {
+                  @include pad(1,0);
                   @include span(9);
                   .title-area {
                      font-size: 1.3rem;
@@ -221,6 +286,336 @@
                   left: 0;
                   padding-left: 0.5em;
                   font-size: 1.1rem;
+               }
+            }
+         }
+      }
+   }
+   @include susy-breakpoint($tablet, $susy) {
+      @include span(12);
+      .division{
+         @include span(12);
+         .division-wrapper {
+            @include span(12);
+         }
+         .img-division {
+            @include span(12);
+         }
+         .division-overlay {
+            @include span(12);
+            .agency {
+               @include span(6);
+               padding-top: 10%;
+               .content-agency {
+                  @include pad(1.5,1.5);
+                  @include span(9);
+               }
+            }
+            .lab {
+               @include span(6);
+               padding-top: 10%;
+               .content-lab {
+                  @include pad(4.5,1.5);
+                  @include span(12);
+               }
+            }
+            .icon {
+               width: 100px;
+               height: 100px;
+               margin-bottom: 5%;
+            }
+            h2 {
+               font-size: 1.25rem;
+            }
+            p {
+               font-size: 1.0rem;
+            }
+         }
+      }
+      .what-we-do {
+         @include span(12);
+         .text {
+            @include span(12);
+            height: 200px;
+            .default-text {
+               padding-top: 5%;
+               @include pad(0.5,0.5);
+               font-size: 1.2rem;
+            }
+            .area-hover {
+               @include pad(0.5,0.5);
+               @include span(11);
+               .area-icon {
+                  padding-left: 5%;
+                  @include span(2);
+                  img {
+                     width: 60px;
+                     height: 60px;
+                  }
+               }
+               .content-area {
+                  @include pad(1,0);
+                  @include span(10);
+                  .title-area {
+                     font-size: 1.2rem;
+                     text-transform: uppercase;
+                  }
+                  .content-text {
+                     font-size: 0.97rem;
+                  }
+               }
+            }
+            .strategy-hover {
+               padding-top: 2%;
+            }
+            .experience-hover{
+               padding-top: 5%;
+            }
+            .develop-hover{
+               padding-top: 5%;
+            }
+            .rd-hover {
+               padding-top: 5%;
+            }
+         }
+         .areas {
+            @include span(12);
+            .area {
+               @include gallery(3);
+               .img-normal {
+                  @include span(12);
+               }
+               .img-hover {
+                  @include span(12);
+               }
+            }
+            .area-overlay {
+               @include span(12);
+               .area-text {
+                  @include span(12);
+                  font-size: 1.2rem;
+                  margin-top: -5%;
+               }
+            }
+         }
+      }
+      .projects {
+         @include span(12);
+         .title {
+            @include span(12);
+            height: 200px;
+            padding-top: 60px;
+            h2 {
+               font-size: 1.2rem;
+               @include pad(0.5,0.5);
+            }
+         }
+         .grid-projects {
+            @include span(12);
+            .project {
+               @include gallery(4);
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 65px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .left {
+                  padding-top: 0.5em;
+                  padding-left: 0.5em;
+                  @include span(4);
+                  .img-agency {
+                     width: 40px;
+                     height: 40px;
+                  }
+               }
+               .right {
+                  @include span(8);
+                  .img-project {
+                     @include span(12);
+                  }
+               }
+               .name {
+                  @include span(6);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.0rem;
+               }
+               .goToProject {
+                  @include span(7);
+                  bottom: -30%;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 0.9rem;
+               }
+            }
+         }
+      }
+   }
+   @include susy-breakpoint($desktop, $susy) {
+      @include span(12);
+      .division{
+         @include span(12);
+         .division-wrapper {
+            @include span(12);
+         }
+         .img-division {
+            @include span(12);
+         }
+         .division-overlay {
+            @include span(12);
+            .agency {
+               @include span(6);
+               padding-top: 15%;
+               .content-agency {
+                  @include pad(2,2);
+                  @include span(8);
+               }
+            }
+            .lab {
+               @include span(6);
+               padding-top: 15%;
+               .content-lab {
+                  @include pad(6,2);
+                  @include span(12);
+               }
+            }
+            .icon {
+               width: 120px;
+               height: 120px;
+               margin-bottom: 5%;
+            }
+            h2 {
+               font-size: 1.65rem;
+            }
+            p {
+               font-size: 1.2rem;
+            }
+         }
+      }
+      .what-we-do {
+         @include span(12);
+         .text {
+            @include span(12);
+            height: 230px;
+            .default-text {
+               padding-top: 5%;
+               @include pad(0.5,0.5);
+               font-size: 1.5rem;
+            }
+            .area-hover {
+               @include pad(0.5,0.5);
+               @include span(11);
+               .area-icon {
+                  padding-left: 5%;
+                  @include span(3);
+                  img {
+                     width: 99px;
+                     height: 99px;
+                  }
+               }
+               .content-area {
+                  @include pad(0,0);
+                  @include span(9);
+                  .title-area {
+                     font-size: 1.3rem;
+                     text-transform: uppercase;
+                  }
+                  .content-text {
+                     font-size: 1.1rem;
+                  }
+               }
+            }
+            .strategy-hover {
+               padding-top: 2%;
+            }
+            .experience-hover{
+               padding-top: 5%;
+            }
+            .develop-hover{
+               padding-top: 5%;
+            }
+            .rd-hover {
+               padding-top: 5%;
+            }
+         }
+         .areas {
+            @include span(12);
+            .area {
+               @include gallery(3);
+               .img-normal {
+                  @include span(12);
+               }
+               .img-hover {
+                  @include span(12);
+               }
+            }
+            .area-overlay {
+               @include span(12);
+               .area-text {
+                  @include span(12);
+                  font-size: 1.4rem;
+                  margin-top: -5%;
+               }
+            }
+         }
+      }
+      .projects {
+         @include span(12);
+         .title {
+            @include span(12);
+            height: 200px;
+            padding-top: 60px;
+            h2 {
+               font-size: 1.5rem;
+               @include pad(0.5,0.5);
+            }
+         }
+         .grid-projects {
+            @include span(12);
+            .project {
+               @include gallery(4);
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 65px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .left {
+                  padding-top: 0.5em;
+                  padding-left: 0.5em;
+                  @include span(4);
+                  .img-agency {
+                     width: 45px;
+                     height: 45px;
+                  }
+               }
+               .right {
+                  @include span(8);
+                  .img-project {
+                     @include span(12);
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.3rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -15%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.0rem;
                }
             }
          }

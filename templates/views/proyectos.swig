@@ -43,6 +43,19 @@
 {% endblock %}
 
 {% block content %}
+	<div class="menu-kamikaze">
+		<div class="logo">
+			<a href="/">
+				<img src="images/logo-kamikazelab.png">
+			</a>
+		</div>
+		<div class="sections">
+			<ul class="nav">
+				<li><a class="active" href="proyectos">Proyectos</a></li>
+				<li><a href="/">Inicio</a></li>
+			</ul>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-md-9">
@@ -51,11 +64,11 @@
 				{% else %}
 					{% if data.proyectos.results.length %}
 						{% if data.proyectos.totalPages > 1 %}
-							<h4 class="text-weight-normal">Showing 
+							<h4 class="text-weight-normal">Showing
 								<strong>{{ data.proyectos.first }}</strong>
-								to 
+								to
 								<strong>{{ data.proyectos.last }}</strong>
-								of 
+								of
 								<strong>{{ data.proyectos.total }}</strong>
 								proyectos.
 							</h4>

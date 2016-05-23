@@ -41,10 +41,6 @@
 	<body>
 
 		{# HEADER #}
-		<div class="menu-kamikaze-home">
-			<div class="logo">
-			</div></div>
-		</div>
 		<!-- <div id="header" class="container"> -->
 
 			{# Customise your site"s navigation by changing the navLinks Array in ./routes/middleware.js
@@ -112,7 +108,7 @@
 						<p>México D.F.</p>
 						<p>C.P. 05109</p>
 						<p class="tel">t. 40 40 79 79</p>
-						<a href="https://goo.gl/maps/QQ9WX">Ir a Google Maps</a>
+						<p><a href="https://goo.gl/maps/QQ9WX">Ir a Google Maps</a></p>
 					</div>
 					<div class="follow">
 						<div class="title-footer">Síguenos</div>

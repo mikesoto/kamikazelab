@@ -48,7 +48,7 @@
 }
 
 .footer {
-   @include susy-breakpoint($tablet, $susy) {
+   @include susy-breakpoint($phone, $susy) {
       @include span(12);
       .footer-wrapper {
          @include span(12);
@@ -91,6 +91,52 @@
       }
       .title-footer {
          font-size: 1.5rem;
+         margin-bottom: 15%;
+      }
+   }
+   @include susy-breakpoint($tablet, $susy) {
+      @include span(12);
+      .footer-wrapper {
+         @include span(12);
+      }
+      .img-footer {
+         @include span(12);
+      }
+      .footer-overlay {
+         @include span(12);
+      }
+      .schema {
+         @include span(3 first);
+         padding-top: 5%;
+         padding-left: 3%;
+         p {
+            font-size: 0.85rem;
+         }
+         .tel {
+            margin-bottom: 10%;
+         }
+      }
+      .follow {
+         @include span(4 last);
+         padding-top: 5%;
+         .follow-icons {
+            .single-follow-icon {
+               height: 36px;
+               margin-right: 20px;
+               -moz-border-radius: 18px;
+               -webkit-border-radius: 18px;
+               border-radius: 18px;
+               -khtml-border-radius: 18px;
+               a {
+                  img {
+                     height: 36px;
+                  }
+               }
+            }
+         }
+      }
+      .title-footer {
+         font-size: 1.2rem;
          margin-bottom: 15%;
       }
    }

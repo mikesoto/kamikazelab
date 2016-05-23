@@ -1,6 +1,6 @@
-.menu-kamikaze-home {
+.menu-kamikaze {
    position: fixed;
-   top: -70px;
+   top: 0;
    width: 100%;
    height: 70px;
    background-color: rgba(255, 255, 255, 0.94);
@@ -8,12 +8,10 @@
    -webkit-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
    z-index: 1000;
-   -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
-   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
    ul {
       list-style: none;
    }
-   .sections-desktop {
+   .sections {
       li {
          float: right;;
          a {
@@ -28,45 +26,30 @@
    }
 }
 
-.menu-kamikaze-home {
-   @include susy-breakpoint($phone, $susy) {
-      @include span(12);
-      .logo {
-         padding-top: 8%;
-         padding-left: 3%;
-         @include span(5);
-         img {
-            @include span(12);
-         }
-      }
-      .sections-desktop {
-         display: none;
-      }
-   }
+.menu-kamikaze {
    @include susy-breakpoint($tablet, $susy) {
       @include span(12);
       .logo {
-         padding-top: 3%;
+         padding-top: 1.5%;
          padding-left: 3%;
-         @include span(3);
+         @include span(2.2);
          img {
             @include span(12);
          }
       }
-      .sections-desktop {
-         display: block;
-         @include span(4 last);
+      .sections {
+         @include span(3 last);
          padding-right: 3%;
          li {
             padding-top: 3%;
             margin-right: 10%;
             a {
-               font-size: 0.9rem;
+               font-size: 1rem;
             }
          }
       }
    }
-   @include susy-breakpoint($desktop, $susy) {
+   @include susy-breakpoint($tablet, $susy) {
       @include span(12);
       .logo {
          padding-top: 1.5%;

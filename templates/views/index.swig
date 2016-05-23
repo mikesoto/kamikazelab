@@ -1,14 +1,30 @@
 {% extends "../layouts/default.swig" %}
 
 {% block content %}
+		<!-- header -->
+		<div class="menu-kamikaze-home">
+			<div class="logo">
+				<a href="/">
+					<img src="images/logo-kamikazelab.png">
+				</a>
+			</div>
+			<div class="sections-desktop">
+				<ul class="nav">
+					<li><a href="proyectos">Proyectos</a></li>
+					<li><a class="active" href="/">Inicio</a></li>
+				</ul>
+			</div>
+		</div>
 		<!-- fold -->
 		<div class="fold">
 			<div class="video-wrapper">
 				<video id="videoId" class="background-video" src="/videos/{{ data.video.video.filename }}" autoplay="autoplay" loop="" muted="" poster=""></video>
+				<img src="/videos/alts/{{ data.video.alt_image_tablet.filename}}" class="img-tablet">
+				<img src="/videos/alts/{{ data.video.alt_image_mobile.filename}}" class="img-mobile">
 				<div class="video-overlay"></div>
 				<div class="fold-detail">
 					<img src="images/logo-kamikazelab-fold.png" class="img-logo">
-					<div class="intro-text">Kamikaze Lab es un laboratorio creativo dedicado a desarrollar estrategias y productos para el mundo digital.</div>
+					<div class="intro-text">KamikazeLab es una agencia dedicada a desarrollar estrategias y soluciones tecnológicas.</div>
 				</div>
 				<a href="#" class="scroll-icon">
 					<img src="images/scroll.png">
@@ -20,9 +36,24 @@
 		<div class="container-fluid">
 			<!-- division -->
 			<div class="division">
-				<div class="agency">
-				</div>
-				<div class="lab">
+				<div class="division-wrapper">
+					<img src="images/division.png" class="img-division">
+					<div class="division-overlay">
+						<div class="agency">
+							<div class="content-agency">
+								<img src="images/agencia.png" class="icon">
+								<h2>Agencia</h2>
+								<p>Nuestras ideas buscan innovar en el mundo digital que cambia constantemente.</p>
+							</div>
+						</div>
+						<div class="lab">
+							<div class="content-lab">
+								<img src="images/lab.png" class="icon">
+								<h2>Laboratorio</h2>
+								<p>Sustentadas por toda la información que nos da el mundo digital para poder hacer llegar el mensaje a la audiencia correcta.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- what-we-do -->
@@ -106,7 +137,7 @@
 						<img src="images/hacemos/que-hacemos4.jpg" class="img-normal" alt="Área de R&amp;D">
 						<img src="images/hacemos/que-hacemos4-hover.jpg" class="img-hover" alt="Área de R&amp;D">
 						<div class="area-overlay">
-							<div class="area-text">R&amp;D/div>
+							<div class="area-text">R&amp;D</div>
 						</div>
 					</div>
 				</div>

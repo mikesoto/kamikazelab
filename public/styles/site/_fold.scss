@@ -17,6 +17,18 @@
       height: auto;
       background-color: $negro;
    }
+   .img-tablet {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+   }
+   .img-mobile {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+   }
    .video-overlay {
       position: absolute;
       left: 0;
@@ -44,20 +56,26 @@
    .scroll-icon {
       position: absolute;
       left: 50%;
-      bottom: 50px;
-      margin-left: -26px;
-      width: 52px;
-      height: 52px;
+      img {
+         width: 100%;
+      }
    }
 }
 
 .fold {
-   @include susy-breakpoint($tablet, $susy) {
+   @include susy-breakpoint($phone, $susy) {
 		@include span(12);
       .video-wrapper {
          @include span(12);
       }
       .background-video {
+         display: none;
+      }
+      .img-tablet {
+         display: none;
+      }
+      .img-mobile {
+         display: block;
          @include span(12);
       }
       .video-overlay {
@@ -67,6 +85,45 @@
          @include pad(1,1);
          @include span(10);
          margin-left: -41.6%;
+         margin-top: -20%;
+         .img-logo {
+            @include span(12);
+         }
+         .intro-text {
+            @include span(12);
+            padding-top: 0.5em;
+            font-size: 0.8rem;
+         }
+      }
+      .scroll-icon {
+         bottom: 10%;
+         margin-left: -20px;
+         width: 40px;
+         height: 40px;
+      }
+	}
+   @include susy-breakpoint($tablet, $susy) {
+		@include span(12);
+      .video-wrapper {
+         @include span(12);
+      }
+      .background-video {
+         display: none;
+      }
+      .img-tablet {
+         display: block;
+         @include span(12);
+      }
+      .img-mobile {
+         display: none;
+      }
+      .video-overlay {
+         @include span(12);
+      }
+      .fold-detail {
+         @include pad(1.5,1.5);
+         @include span(9);
+         margin-left: -37.5%;
          margin-top: -10%;
          .img-logo {
             @include span(12);
@@ -76,6 +133,51 @@
             padding-top: 0.5em;
             font-size: 1.2rem;
          }
+      }
+      .scroll-icon {
+         bottom: 10%;
+         margin-left: -23px;
+         width: 46px;
+         height: 46px;
+      }
+	}
+   @include susy-breakpoint($desktop, $susy) {
+		@include span(12);
+      .video-wrapper {
+         @include span(12);
+      }
+      .background-video {
+         display: block;
+         @include span(12);
+      }
+      .img-tablet {
+         display: none;
+      }
+      .img-mobile {
+         display: none;
+      }
+      .video-overlay {
+         @include span(12);
+      }
+      .fold-detail {
+         @include pad(1.5,1.5);
+         @include span(9);
+         margin-left: -37.5%;
+         margin-top: -5%;
+         .img-logo {
+            @include span(12);
+         }
+         .intro-text {
+            @include span(12);
+            padding-top: 0.5em;
+            font-size: 1.4rem;
+         }
+      }
+      .scroll-icon {
+         bottom: 10%;
+         margin-left: -26px;
+         width: 52px;
+         height: 52px;
       }
 	}
 }
