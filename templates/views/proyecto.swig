@@ -8,7 +8,7 @@
 				<p>{{ data.proyecto.content.brief | safe }}</p>
 			</div>
 			<div class="col-sm-6">
-				<img src="{{ data.proyecto._.image_primary.fit(530,450) }}" class="img-responsive">
+				<img src="/images/proyectos/{{ proyecto.image_primary.filename }}" class="img-responsive">
 			</div>
 		</div>
 		<div class="row">

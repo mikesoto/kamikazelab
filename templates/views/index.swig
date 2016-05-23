@@ -204,7 +204,7 @@
 									<img src="images/agencia.png" class="img-agency" alt="Icono de la agencia">
 								</div>
 								<div class="right">
-									<img src="{{ proyecto._.image_primary.fit(300,300) }}" class="img-project" alt="Imagen principal del proyecto">
+									<img src="/images/proyectos/{{ proyecto.image_primary.filename }}" class="img-project" alt="Imagen principal del proyecto">
 								</div>
 								<div class="name">{{ proyecto.title }}</div>
 								<div class="goToProject">
