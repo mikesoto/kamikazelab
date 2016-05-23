@@ -27,18 +27,33 @@
 }
 
 .menu-kamikaze {
-   @include susy-breakpoint($tablet, $susy) {
+   @include susy-breakpoint($phone, $susy) {
       @include span(12);
       .logo {
-         padding-top: 1.5%;
+         padding-top: 8%;
          padding-left: 3%;
-         @include span(2.2);
+         @include span(5);
          img {
             @include span(12);
          }
       }
       .sections {
-         @include span(3 last);
+         display: none;
+      }
+   }
+   @include susy-breakpoint($tablet, $susy) {
+      @include span(12);
+      .logo {
+         padding-top: 3%;
+         padding-left: 3%;
+         @include span(3);
+         img {
+            @include span(12);
+         }
+      }
+      .sections {
+         display: block;
+         @include span(4 last);
          padding-right: 3%;
          li {
             padding-top: 3%;
@@ -49,7 +64,7 @@
          }
       }
    }
-   @include susy-breakpoint($tablet, $susy) {
+   @include susy-breakpoint($desktop, $susy) {
       @include span(12);
       .logo {
          padding-top: 1.5%;
@@ -60,6 +75,7 @@
          }
       }
       .sections {
+         display: block;
          @include span(3 last);
          padding-right: 3%;
          li {

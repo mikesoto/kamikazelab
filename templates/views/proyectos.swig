@@ -33,13 +33,13 @@
 {% endmacro %}
 
 {% block intro %}
-	<div class="container">
+	<!-- <div class="container">
 		{% set title = "Proyectos" %}
 		{% if data.category %}
 			{% set title = data.category.name %}
 		{% endif %}
 		<h1>{{ title }}</h1>
-	</div>
+	</div> -->
 {% endblock %}
 
 {% block content %}
@@ -56,7 +56,52 @@
 			</ul>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-projects">
+			<div class="projects-page">
+				<div class="header-projects">
+					<div class="title-page">
+						<div class="text">Proyectos</div>
+						<div class="support-text">Estas son algunas de nuestras creaciones más temidas.</div>
+					</div>
+				</div>
+				<div class="projects">
+					{% if filters.category and not data.category %}
+						<h3 class="text-muted">Invalid Category.</h3>
+					{% else %}
+						{% if data.proyectos.results.length %}
+							<h4 class="text-weight-normal">Showing
+								<strong>{{ data.proyectos.first }}</strong>
+								to
+								<strong>{{ data.proyectos.last }}</strong>
+								of
+								<strong>{{ data.proyectos.total }}</strong>
+								proyectos.
+							</h4>
+						{% else %}
+							<h4 class="text-weight-normal">Showing {{ utils.plural(data.proyectos.results.length, "* proyecto") }}.</h4>
+						{% endif %}
+						<div class="grid-projects">
+							{% for proyecto in data.proyectos.results %}
+							<div class="project">
+								<div class="left">
+									<img src="/images/agencia.png" class="img-agency" alt="Icono de la agencia">
+								</div>
+								<div class="right">
+									<img src="/images/proyectos/{{ proyecto.image_small.filename }}" class="img-project" alt="Imagen principal del proyecto">
+								</div>
+								<div class="name">{{ proyecto.title }}</div>
+								<div class="goToProject">
+									<a href="/proyecto/{{ proyecto.slug }}">Ir a Proyecto</a>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					{% endif %}
+
+				</div>
+			</div>
+	</div>
+	<!-- <div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-md-9">
 				{% if filters.category and not data.category %}
@@ -136,5 +181,5 @@
 			</div>
 			{% endif %}
 		</div>
-	</div>
+	</div> -->
 {% endblock %}
