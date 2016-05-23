@@ -1,27 +1,257 @@
-.projects-page {
-   padding-top: 70px;
-   .header-projects {
-      .title-page {
-         background-color: $negro;
+.container-projects {
+   padding-top: 0;
+   .projects-page {
+      padding-top: 70px;
+      .header-projects {
+         .title-page {
+            background-color: $negro;
+            .text {
+               text-align: center;
+               text-transform: uppercase;
+               color: $blanco;
+            }
+            .support-text {
+               text-align: center;
+               color: $blanco;
+            }
+         }
+      }
+   }
+   .projects {
+      .grid-projects {
+         background-color: $gris-oscuro;
+         .project {
+            position: relative;
+            overflow: hidden;
+            .name {
+               position: absolute;
+               color: $blanco;
+               text-transform: uppercase;
+               -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+               transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+            }
+            .goToProject {
+               position: absolute;
+               -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+               transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+               a {
+                  text-decoration: none;
+                  padding: 6px 10px;
+                  border: 1px solid #ffffff;
+                  text-transform: uppercase;
+                  color: $blanco;
+               }
+            }
+         }
       }
    }
 }
 
-.projects-page {
-   // @include susy-breakpoint($phone, $susy) {
-   //    @include span(12);
-   // }
-   // @include susy-breakpoint($tablet, $susy) {
-   //    @include span(12);
-   // }
+.container-projects {
+   @include susy-breakpoint($phone, $susy) {
+      @include span(12);
+      .projects-page {
+         @include span(12);
+         .header-projects {
+            @include span(12);
+            .title-page {
+               @include span(12);
+               padding-top: 4%;
+               padding-bottom: 4%;
+               .text {
+                  font-size: 1.3rem;
+               }
+               .support-text {
+                  @include pad(1.5,1.5);
+                  @include span(12);
+                  font-size: 0.85rem;
+               }
+            }
+         }
+      }
+      .projects {
+         @include span(12);
+         .grid-projects {
+            @include span(12);
+            .project {
+               @include span(12);
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .left {
+                  padding-top: 0.5em;
+                  padding-left: 0.5em;
+                  @include span(6);
+                  .img-agency {
+                     width: 45px;
+                     height: 45px;
+                  }
+               }
+               .right {
+                  @include span(6);
+                  .img-project {
+                     @include span(12);
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 0.9rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -20%;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 0.8rem;
+               }
+            }
+         }
+      }
+   }
+   @include susy-breakpoint($tablet, $susy) {
+      @include span(12);
+      .projects-page {
+         @include span(12);
+         .header-projects {
+            @include span(12);
+            .title-page {
+               @include span(12);
+               padding-top: 4%;
+               padding-bottom: 4%;
+               .text {
+                  font-size: 1.8rem;
+               }
+               .support-text {
+                  @include pad(0,0);
+                  @include span(12);
+                  font-size: 1.2rem;
+               }
+            }
+         }
+      }
+      .projects {
+         @include span(12);
+         .grid-projects {
+            @include span(12);
+            .project {
+               @include gallery(6);
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 50px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .left {
+                  padding-top: 0.5em;
+                  padding-left: 0.5em;
+                  @include span(6);
+                  .img-agency {
+                     width: 40px;
+                     height: 40px;
+                  }
+               }
+               .right {
+                  @include span(6);
+                  .img-project {
+                     @include span(12);
+                  }
+               }
+               .name {
+                  @include span(6);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.0rem;
+               }
+               .goToProject {
+                  @include span(7);
+                  bottom: -30%;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 0.9rem;
+               }
+            }
+         }
+      }
+   }
    @include susy-breakpoint($desktop, $susy) {
       @include span(12);
-      .header-projects {
+      .projects-page {
          @include span(12);
-         .title-page {
+         .header-projects {
             @include span(12);
-            padding-top: 40px;
-            padding-bottom: 40px;
+            .title-page {
+               @include span(12);
+               padding-top: 4%;
+               padding-bottom: 4%;
+               .text {
+                  font-size: 1.8rem;
+               }
+               .support-text {
+                  @include pad(0,0);
+                  @include span(12);
+                  font-size: 1.2rem;
+               }
+            }
+         }
+      }
+      .projects {
+         @include span(12);
+         .grid-projects {
+            @include span(12);
+            .project {
+               @include gallery(4);
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .left {
+                  padding-top: 0.5em;
+                  padding-left: 0.5em;
+                  @include span(6);
+                  .img-agency {
+                     width: 45px;
+                     height: 45px;
+                  }
+               }
+               .right {
+                  @include span(6);
+                  .img-project {
+                     @include span(12);
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.3rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -20%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.0rem;
+               }
+            }
          }
       }
    }

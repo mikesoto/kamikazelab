@@ -191,6 +191,7 @@ body {
         margin-left: 0;
         margin-right: 0; }
     .menu-kamikaze .sections {
+      display: block;
       width: 25%;
       float: right;
       margin-right: 0;
@@ -1190,29 +1191,313 @@ body {
             padding-left: 0.5em;
             font-size: 1.0rem; } }
 
-.projects-page {
-  padding-top: 70px; }
-  .projects-page .header-projects .title-page {
-    background-color: #000; }
+.container-projects {
+  padding-top: 0; }
+  .container-projects .projects-page {
+    padding-top: 70px; }
+    .container-projects .projects-page .header-projects .title-page {
+      background-color: #000; }
+      .container-projects .projects-page .header-projects .title-page .text {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff; }
+      .container-projects .projects-page .header-projects .title-page .support-text {
+        text-align: center;
+        color: #fff; }
+  .container-projects .projects .grid-projects {
+    background-color: #2f2f2f; }
+    .container-projects .projects .grid-projects .project {
+      position: relative;
+      overflow: hidden; }
+      .container-projects .projects .grid-projects .project .name {
+        position: absolute;
+        color: #fff;
+        text-transform: uppercase;
+        -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+        transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s; }
+      .container-projects .projects .grid-projects .project .goToProject {
+        position: absolute;
+        -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+        transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s; }
+        .container-projects .projects .grid-projects .project .goToProject a {
+          text-decoration: none;
+          padding: 6px 10px;
+          border: 1px solid #ffffff;
+          text-transform: uppercase;
+          color: #fff; }
 
-@media (min-width: 1200px) {
-  .projects-page {
+@media (min-width: 0) {
+  .container-projects {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0; }
-    .projects-page .header-projects {
+    .container-projects .projects-page {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0; }
-      .projects-page .header-projects .title-page {
+      .container-projects .projects-page .header-projects {
         width: 100%;
         float: left;
         margin-left: 0;
-        margin-right: 0;
-        padding-top: 40px;
-        padding-bottom: 40px; } }
+        margin-right: 0; }
+        .container-projects .projects-page .header-projects .title-page {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0;
+          padding-top: 4%;
+          padding-bottom: 4%; }
+          .container-projects .projects-page .header-projects .title-page .text {
+            font-size: 1.3rem; }
+          .container-projects .projects-page .header-projects .title-page .support-text {
+            padding-left: 12.5%;
+            padding-right: 12.5%;
+            width: 100%;
+            float: left;
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 0.85rem; }
+    .container-projects .projects {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .container-projects .projects .grid-projects {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; }
+        .container-projects .projects .grid-projects .project {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0; }
+          .container-projects .projects .grid-projects .project:hover {
+            cursor: pointer; }
+            .container-projects .projects .grid-projects .project:hover .name {
+              bottom: 55px; }
+            .container-projects .projects .grid-projects .project:hover .goToProject {
+              bottom: 15px; }
+          .container-projects .projects .grid-projects .project .left {
+            padding-top: 0.5em;
+            padding-left: 0.5em;
+            width: 50%;
+            float: left; }
+            .container-projects .projects .grid-projects .project .left .img-agency {
+              width: 45px;
+              height: 45px; }
+          .container-projects .projects .grid-projects .project .right {
+            width: 50%;
+            float: left; }
+            .container-projects .projects .grid-projects .project .right .img-project {
+              width: 100%;
+              float: left;
+              margin-left: 0;
+              margin-right: 0; }
+          .container-projects .projects .grid-projects .project .name {
+            width: 41.66667%;
+            float: left;
+            bottom: 15px;
+            left: 0;
+            padding-left: 0.5em;
+            font-size: 0.9rem; }
+          .container-projects .projects .grid-projects .project .goToProject {
+            width: 41.66667%;
+            float: left;
+            bottom: -20%;
+            left: 0;
+            padding-left: 0.5em;
+            font-size: 0.8rem; } }
+
+@media (min-width: 768px) {
+  .container-projects {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    .container-projects .projects-page {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .container-projects .projects-page .header-projects {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; }
+        .container-projects .projects-page .header-projects .title-page {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0;
+          padding-top: 4%;
+          padding-bottom: 4%; }
+          .container-projects .projects-page .header-projects .title-page .text {
+            font-size: 1.8rem; }
+          .container-projects .projects-page .header-projects .title-page .support-text {
+            padding-left: 0%;
+            padding-right: 0%;
+            width: 100%;
+            float: left;
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 1.2rem; }
+    .container-projects .projects {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .container-projects .projects .grid-projects {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; }
+        .container-projects .projects .grid-projects .project {
+          width: 50%;
+          float: left; }
+          .container-projects .projects .grid-projects .project:nth-child(2n + 1) {
+            margin-left: 0;
+            margin-right: -100%;
+            clear: both;
+            margin-left: 0; }
+          .container-projects .projects .grid-projects .project:nth-child(2n + 2) {
+            margin-left: 50%;
+            margin-right: -100%;
+            clear: none; }
+          .container-projects .projects .grid-projects .project:hover {
+            cursor: pointer; }
+            .container-projects .projects .grid-projects .project:hover .name {
+              bottom: 50px; }
+            .container-projects .projects .grid-projects .project:hover .goToProject {
+              bottom: 15px; }
+          .container-projects .projects .grid-projects .project .left {
+            padding-top: 0.5em;
+            padding-left: 0.5em;
+            width: 50%;
+            float: left; }
+            .container-projects .projects .grid-projects .project .left .img-agency {
+              width: 40px;
+              height: 40px; }
+          .container-projects .projects .grid-projects .project .right {
+            width: 50%;
+            float: left; }
+            .container-projects .projects .grid-projects .project .right .img-project {
+              width: 100%;
+              float: left;
+              margin-left: 0;
+              margin-right: 0; }
+          .container-projects .projects .grid-projects .project .name {
+            width: 50%;
+            float: left;
+            bottom: 15px;
+            left: 0;
+            padding-left: 0.5em;
+            font-size: 1.0rem; }
+          .container-projects .projects .grid-projects .project .goToProject {
+            width: 58.33333%;
+            float: left;
+            bottom: -30%;
+            left: 0;
+            padding-left: 0.5em;
+            font-size: 0.9rem; } }
+
+@media (min-width: 1200px) {
+  .container-projects {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    .container-projects .projects-page {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .container-projects .projects-page .header-projects {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; }
+        .container-projects .projects-page .header-projects .title-page {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0;
+          padding-top: 4%;
+          padding-bottom: 4%; }
+          .container-projects .projects-page .header-projects .title-page .text {
+            font-size: 1.8rem; }
+          .container-projects .projects-page .header-projects .title-page .support-text {
+            padding-left: 0%;
+            padding-right: 0%;
+            width: 100%;
+            float: left;
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 1.2rem; }
+    .container-projects .projects {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .container-projects .projects .grid-projects {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; }
+        .container-projects .projects .grid-projects .project {
+          width: 33.33333%;
+          float: left; }
+          .container-projects .projects .grid-projects .project:nth-child(3n + 1) {
+            margin-left: 0;
+            margin-right: -100%;
+            clear: both;
+            margin-left: 0; }
+          .container-projects .projects .grid-projects .project:nth-child(3n + 2) {
+            margin-left: 33.33333%;
+            margin-right: -100%;
+            clear: none; }
+          .container-projects .projects .grid-projects .project:nth-child(3n + 3) {
+            margin-left: 66.66667%;
+            margin-right: -100%;
+            clear: none; }
+          .container-projects .projects .grid-projects .project:hover {
+            cursor: pointer; }
+            .container-projects .projects .grid-projects .project:hover .name {
+              bottom: 55px; }
+            .container-projects .projects .grid-projects .project:hover .goToProject {
+              bottom: 15px; }
+          .container-projects .projects .grid-projects .project .left {
+            padding-top: 0.5em;
+            padding-left: 0.5em;
+            width: 50%;
+            float: left; }
+            .container-projects .projects .grid-projects .project .left .img-agency {
+              width: 45px;
+              height: 45px; }
+          .container-projects .projects .grid-projects .project .right {
+            width: 50%;
+            float: left; }
+            .container-projects .projects .grid-projects .project .right .img-project {
+              width: 100%;
+              float: left;
+              margin-left: 0;
+              margin-right: 0; }
+          .container-projects .projects .grid-projects .project .name {
+            width: 41.66667%;
+            float: left;
+            bottom: 15px;
+            left: 0;
+            padding-left: 0.5em;
+            font-size: 1.3rem; }
+          .container-projects .projects .grid-projects .project .goToProject {
+            width: 41.66667%;
+            float: left;
+            bottom: -20%;
+            left: 0;
+            padding-left: 0.5em;
+            font-size: 1.0rem; } }
 
 .footer {
   height: 100%;

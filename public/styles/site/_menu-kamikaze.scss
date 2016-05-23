@@ -75,6 +75,7 @@
          }
       }
       .sections {
+         display: block;
          @include span(3 last);
          padding-right: 3%;
          li {
