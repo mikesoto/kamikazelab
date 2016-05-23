@@ -1,0 +1,28 @@
+.projects-page {
+   padding-top: 70px;
+   .header-projects {
+      .title-page {
+         background-color: $negro;
+      }
+   }
+}
+
+.projects-page {
+   // @include susy-breakpoint($phone, $susy) {
+   //    @include span(12);
+   // }
+   // @include susy-breakpoint($tablet, $susy) {
+   //    @include span(12);
+   // }
+   @include susy-breakpoint($desktop, $susy) {
+      @include span(12);
+      .header-projects {
+         @include span(12);
+         .title-page {
+            @include span(12);
+            padding-top: 40px;
+            padding-bottom: 40px;
+         }
+      }
+   }
+}

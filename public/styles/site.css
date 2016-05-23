@@ -77,7 +77,7 @@ body {
         padding-top: 3%;
         margin-right: 10%; }
         .menu-kamikaze-home .sections-desktop li a {
-          font-size: 0.9rem; } }
+          font-size: 1rem; } }
 
 @media (min-width: 1200px) {
   .menu-kamikaze-home {
@@ -127,16 +127,16 @@ body {
       .menu-kamikaze .sections li a.active {
         color: #6c2026; }
 
-@media (min-width: 768px) {
+@media (min-width: 0) {
   .menu-kamikaze {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0; }
     .menu-kamikaze .logo {
-      padding-top: 1.5%;
+      padding-top: 8%;
       padding-left: 3%;
-      width: 18.33333%;
+      width: 41.66667%;
       float: left; }
       .menu-kamikaze .logo img {
         width: 100%;
@@ -144,7 +144,27 @@ body {
         margin-left: 0;
         margin-right: 0; }
     .menu-kamikaze .sections {
+      display: none; } }
+
+@media (min-width: 768px) {
+  .menu-kamikaze {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    .menu-kamikaze .logo {
+      padding-top: 3%;
+      padding-left: 3%;
       width: 25%;
+      float: left; }
+      .menu-kamikaze .logo img {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; }
+    .menu-kamikaze .sections {
+      display: block;
+      width: 33.33333%;
       float: right;
       margin-right: 0;
       padding-right: 3%; }
@@ -154,7 +174,7 @@ body {
         .menu-kamikaze .sections li a {
           font-size: 1rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-kamikaze {
     width: 100%;
     float: left;
@@ -1169,6 +1189,30 @@ body {
             left: 0;
             padding-left: 0.5em;
             font-size: 1.0rem; } }
+
+.projects-page {
+  padding-top: 70px; }
+  .projects-page .header-projects .title-page {
+    background-color: #000; }
+
+@media (min-width: 1200px) {
+  .projects-page {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    .projects-page .header-projects {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .projects-page .header-projects .title-page {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 40px;
+        padding-bottom: 40px; } }
 
 .footer {
   height: 100%;
