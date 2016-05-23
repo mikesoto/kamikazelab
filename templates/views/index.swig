@@ -141,6 +141,56 @@
 						</div>
 					</div>
 				</div>
+				<!-- areas mobile -->
+				<div class="areas-mobile">
+					<div class="area area-mobile-hover1">
+						<img src="images/hacemos/que-hacemos1.jpg" class="img-normal" alt="Área de Estrategia">
+						<img src="images/hacemos/que-hacemos1-hover.jpg" class="img-hover" alt="Área de Estrategia">
+						<div class="area-overlay">
+							<div class="area-text">Estrategias</div>
+							<div class="content-text">
+								Creamos estrategias digitales para conectar con los consumidores de nuestras marcas.
+								<ul>
+									<li>Estrategias 360°</li>
+									<li>Estrategias de Contenido</li>
+									<li>Estrategias de Consultoría</li>
+									<li>Estrategias de Medios</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="area area-mobile-hover2">
+						<img src="images/hacemos/que-hacemos2.jpg" class="img-normal" alt="Área de Experiencia">
+						<img src="images/hacemos/que-hacemos2-hover.jpg" class="img-hover" alt="Área de Experiencia">
+						<div class="area-overlay">
+							<div class="area-text">Experiencias</div>
+							<div class="content-text">
+								Creamos las experiencias que nuestros clientes necesitan para comunicar su mensaje. Analizamos a los usuarios para entender sus procesos y crearles experiencias de acuerdo a sus usos de internet.
+							</div>
+						</div>
+					</div>
+					<div class="area area-mobile-hover3">
+						<img src="images/hacemos/que-hacemos3.jpg" class="img-normal" alt="Área de Desarrollo">
+						<img src="images/hacemos/que-hacemos3-hover.jpg" class="img-hover" alt="Área de Desarrollo">
+						<div class="area-overlay">
+							<div class="area-text">Desarrollos</div>
+							<div class="content-text">
+								Creamos plataformas inteligentes para generar soluciones por medio de sistemas digitalizados. Analizamos las tendencias y nuevos lenguajes para construir plataformas innovadoras.
+							</div>
+						</div>
+					</div>
+					<div class="area area-mobile-hover4">
+						<img src="images/hacemos/que-hacemos4.jpg" class="img-normal" alt="Área de R&amp;D">
+						<img src="images/hacemos/que-hacemos4-hover.jpg" class="img-hover" alt="Área de R&amp;D">
+						<div class="area-overlay">
+							<div class="area-text">R&amp;D</div>
+							<div class="content-text">
+								Generamos mensajes clave para la audiencia que busca a nuestros clientes. Optimizamos diario para tener el mejor resultado y la mejor conversión.
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end areas mobile -->
 			</div>
 			<div class="projects">
 				<div class="title">

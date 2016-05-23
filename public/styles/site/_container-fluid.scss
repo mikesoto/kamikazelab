@@ -48,6 +48,41 @@
             display: none;
          }
       }
+      .areas-mobile {
+         .area {
+            position: relative;
+            .img-hover {
+               display: none;
+            }
+            &:hover {
+               .img-normal {
+                  display: none;
+               }
+               .img-hover {
+                  display: block;
+               }
+               .area-overlay {
+                  display: none;
+               }
+            }
+         }
+         .area-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: auto;
+            .area-text {
+               text-transform: uppercase;
+               color: $blanco;
+               text-align: center;
+            }
+            .content-text {
+               color: $blanco;
+            }
+         }
+      }
       .areas {
          .area {
             position: relative;
@@ -183,29 +218,6 @@
                @include pad(0.5,0.5);
                font-size: 1.5rem;
             }
-            .area-hover {
-               @include pad(0.5,0.5);
-               @include span(11);
-               .area-icon {
-                  padding-left: 5%;
-                  @include span(3);
-                  img {
-                     width: 60px;
-                     height: 60px;
-                  }
-               }
-               .content-area {
-                  @include pad(1,0);
-                  @include span(9);
-                  .title-area {
-                     font-size: 1.3rem;
-                     text-transform: uppercase;
-                  }
-                  .content-text {
-                     font-size: 1.1rem;
-                  }
-               }
-            }
             .strategy-hover {
                padding-top: 2%;
             }
@@ -219,7 +231,11 @@
                padding-top: 5%;
             }
          }
-         .areas {
+         .areas{
+            display: none;
+         }
+         .areas-mobile {
+            display: block;
             @include span(12);
             .area {
                @include span(12);
@@ -235,7 +251,14 @@
                .area-text {
                   @include span(12);
                   font-size: 1.4rem;
-                  margin-top: -5%;
+                  margin-top: 10%;
+                  margin-bottom: 5%;
+               }
+               .content-text {
+                  @include pad(1,1);
+                  @include span(12);
+                  text-align: center;
+                  font-size: 1.1rem;
                }
             }
          }
@@ -397,6 +420,7 @@
             }
          }
          .areas {
+            display: block;
             @include span(12);
             .area {
                @include gallery(3);
@@ -415,6 +439,9 @@
                   margin-top: -5%;
                }
             }
+         }
+         .areas-mobile {
+            display: none;
          }
       }
       .projects {
@@ -572,6 +599,7 @@
             }
          }
          .areas {
+            display: block;
             @include span(12);
             .area {
                @include gallery(3);
@@ -590,6 +618,9 @@
                   margin-top: -5%;
                }
             }
+         }
+         .areas-mobile {
+            display: none;
          }
       }
       .projects {

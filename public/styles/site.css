@@ -420,6 +420,29 @@ body {
       display: none; }
     .container-fluid .what-we-do .text .rd-hover {
       display: none; }
+  .container-fluid .what-we-do .areas-mobile .area {
+    position: relative; }
+    .container-fluid .what-we-do .areas-mobile .area .img-hover {
+      display: none; }
+    .container-fluid .what-we-do .areas-mobile .area:hover .img-normal {
+      display: none; }
+    .container-fluid .what-we-do .areas-mobile .area:hover .img-hover {
+      display: block; }
+    .container-fluid .what-we-do .areas-mobile .area:hover .area-overlay {
+      display: none; }
+  .container-fluid .what-we-do .areas-mobile .area-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto; }
+    .container-fluid .what-we-do .areas-mobile .area-overlay .area-text {
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center; }
+    .container-fluid .what-we-do .areas-mobile .area-overlay .content-text {
+      color: #fff; }
   .container-fluid .what-we-do .areas .area {
     position: relative; }
     .container-fluid .what-we-do .areas .area .img-hover {
@@ -561,28 +584,6 @@ body {
           padding-left: 4.16667%;
           padding-right: 4.16667%;
           font-size: 1.5rem; }
-        .container-fluid .what-we-do .text .area-hover {
-          padding-left: 4.16667%;
-          padding-right: 4.16667%;
-          width: 91.66667%;
-          float: left; }
-          .container-fluid .what-we-do .text .area-hover .area-icon {
-            padding-left: 5%;
-            width: 25%;
-            float: left; }
-            .container-fluid .what-we-do .text .area-hover .area-icon img {
-              width: 60px;
-              height: 60px; }
-          .container-fluid .what-we-do .text .area-hover .content-area {
-            padding-left: 8.33333%;
-            padding-right: 0%;
-            width: 75%;
-            float: left; }
-            .container-fluid .what-we-do .text .area-hover .content-area .title-area {
-              font-size: 1.3rem;
-              text-transform: uppercase; }
-            .container-fluid .what-we-do .text .area-hover .content-area .content-text {
-              font-size: 1.1rem; }
         .container-fluid .what-we-do .text .strategy-hover {
           padding-top: 2%; }
         .container-fluid .what-we-do .text .experience-hover {
@@ -592,37 +593,50 @@ body {
         .container-fluid .what-we-do .text .rd-hover {
           padding-top: 5%; }
       .container-fluid .what-we-do .areas {
+        display: none; }
+      .container-fluid .what-we-do .areas-mobile {
+        display: block;
         width: 100%;
         float: left;
         margin-left: 0;
         margin-right: 0; }
-        .container-fluid .what-we-do .areas .area {
+        .container-fluid .what-we-do .areas-mobile .area {
           width: 100%;
           float: left;
           margin-left: 0;
           margin-right: 0; }
-          .container-fluid .what-we-do .areas .area .img-normal {
+          .container-fluid .what-we-do .areas-mobile .area .img-normal {
             width: 100%;
             float: left;
             margin-left: 0;
             margin-right: 0; }
-          .container-fluid .what-we-do .areas .area .img-hover {
+          .container-fluid .what-we-do .areas-mobile .area .img-hover {
             width: 100%;
             float: left;
             margin-left: 0;
             margin-right: 0; }
-        .container-fluid .what-we-do .areas .area-overlay {
+        .container-fluid .what-we-do .areas-mobile .area-overlay {
           width: 100%;
           float: left;
           margin-left: 0;
           margin-right: 0; }
-          .container-fluid .what-we-do .areas .area-overlay .area-text {
+          .container-fluid .what-we-do .areas-mobile .area-overlay .area-text {
             width: 100%;
             float: left;
             margin-left: 0;
             margin-right: 0;
             font-size: 1.4rem;
-            margin-top: -5%; }
+            margin-top: 10%;
+            margin-bottom: 4%; }
+          .container-fluid .what-we-do .areas-mobile .area-overlay .content-text {
+            padding-left: 8.33333%;
+            padding-right: 8.33333%;
+            width: 100%;
+            float: left;
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+            font-size: 1.1rem; }
     .container-fluid .projects {
       width: 100%;
       float: left;
@@ -801,6 +815,7 @@ body {
         .container-fluid .what-we-do .text .rd-hover {
           padding-top: 5%; }
       .container-fluid .what-we-do .areas {
+        display: block;
         width: 100%;
         float: left;
         margin-left: 0;
@@ -847,6 +862,8 @@ body {
             margin-right: 0;
             font-size: 1.2rem;
             margin-top: -5%; }
+      .container-fluid .what-we-do .areas-mobile {
+        display: none; }
     .container-fluid .projects {
       width: 100%;
       float: left;
@@ -1030,6 +1047,7 @@ body {
         .container-fluid .what-we-do .text .rd-hover {
           padding-top: 5%; }
       .container-fluid .what-we-do .areas {
+        display: block;
         width: 100%;
         float: left;
         margin-left: 0;
@@ -1076,6 +1094,8 @@ body {
             margin-right: 0;
             font-size: 1.4rem;
             margin-top: -5%; }
+      .container-fluid .what-we-do .areas-mobile {
+        display: none; }
     .container-fluid .projects {
       width: 100%;
       float: left;
