@@ -21,7 +21,7 @@
 			{% endif %}
 		</p>
 		{% if proyecto.image_primary.exists %}
-			<img src="{{ proyecto._.image_primary.fit(160,160) }}" class="img">
+			<img src="/images/proyectos/{{ proyecto.image_primary.filename }}" class="img">
 		{% endif %}
 		<p>{{ proyecto.content.brief | safe }}</p>
 		{% if proyecto.content.extended %}

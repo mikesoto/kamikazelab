@@ -98,7 +98,7 @@
 		{# FOOTER #}
 		<div class="footer">
 			<div class="footer-wrapper">
-				<img src="images/footer-bg.jpg" class="img-footer">
+				<img src="/images/footer-bg.jpg" class="img-footer">
 				<div class="footer-overlay">
 					<div class="schema">
 						<div class="title-footer">Encuéntranos</div>
@@ -115,22 +115,22 @@
 						<div class="follow-icons">
 							<div class="single-follow-icon">
 								<a href="http://www.facebook.com/KamikazeLab" target="_blank">
-									<img src="images/facebook.png">
+									<img src="/images/facebook.png">
 								</a>
 							</div>
 							<div class="single-follow-icon">
 								<a href="http://twitter.com/KamikazeLab" target="_blank">
-									<img src="images/twitter.png">
+									<img src="/images/twitter.png">
 								</a>
 							</div>
 							<div class="single-follow-icon">
 								<a href="http://plus.google.com/114926256044013113957/about" target="_blank">
-									<img src="images/google.png">
+									<img src="/images/google.png">
 								</a>
 							</div>
 							<div class="single-follow-icon">
 								<a href="http://www.linkedin.com/company/kamikaze-lab" target="_blank">
-									<img src="images/linkedIn.png">
+									<img src="/images/linkedIn.png">
 								</a>
 							</div>
 						</div>
@@ -158,8 +158,8 @@
 
 		{# Add scripts that are globally required by your site here. #}
 		<!-- <script src="js/main.js"></script> -->
-		<script src="js/fold.js"></script>
-		<script src="js/container-fluid.js"></script>
+		<script src="/js/fold.js"></script>
+		<script src="/js/container-fluid.js"></script>
 		{# Include template-specific javascript files by extending the js block #}
 		{%- block js -%}{%- endblock -%}
 	</body>

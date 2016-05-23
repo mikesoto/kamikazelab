@@ -8,18 +8,18 @@
 				<p>{{ data.proyecto.content.brief | safe }}</p>
 			</div>
 			<div class="col-sm-6">
-				<img src="/images/proyectos/{{ proyecto.image_primary.filename }}" class="img-responsive">
+				<img src="/images/proyectos/{{ data.proyecto.image_primary.filename }}" class="img-responsive">
 			</div>
 		</div>
 		<div class="row">
 				<div class="col-sm-6">
 					<div class="col-sm-12">
-						<img src="{{ data.proyecto._.image_ext_1.fit(150,150) }}" class="img-responsive" style="float:left;">
-						<img src="{{ data.proyecto._.image_ext_2.fit(150,150) }}" class="img-responsive" style="float:left;">
+						<img src="/images/proyectos/extras/{{ data.proyecto.image_ext_1.filename }}" class="img-responsive" style="float:left;">
+						<img src="/images/proyectos/extras/{{ data.proyecto.image_ext_2.filename }}" class="img-responsive" style="float:left;">
 					</div>
 					<div class="col-sm-12">
-						<img src="{{ data.proyecto._.image_ext_3.fit(150,150) }}" class="img-responsive" style="float:left;">
-						<img src="{{ data.proyecto._.image_ext_4.fit(150,150) }}" class="img-responsive" style="float:left;">
+						<img src="/images/proyectos/extras/{{ data.proyecto.image_ext_3.filename }}" class="img-responsive" style="float:left;">
+						<img src="/images/proyectos/extras/{{ data.proyecto.image_ext_4.filename }}" class="img-responsive" style="float:left;">
 					</div>
 				</div>
 				<div class="col-sm-6">
