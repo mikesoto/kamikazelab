@@ -1,0 +1,287 @@
+.container-project {
+   padding-top: 70px;
+   .project-page {
+      .project-slide {
+         background-color: gray;
+         .left {
+            .content-project{
+               color: $blanco;
+               .project-title {
+                  text-transform: uppercase;
+               }
+               .slide-btn {
+                  a {
+                     text-decoration: none;
+                     padding: 6px 10px;
+                     border: 1px solid #ffffff;
+                     text-transform: uppercase;
+                     color: $blanco;
+                  }
+               }
+            }
+         }
+      }
+      .project-info {
+         overflow: hidden;
+         background-color: $gris-oscuro;
+         .right-info {
+            padding-bottom: 32767px;
+            margin-bottom: -32767px;
+            color: $blanco;
+         }
+         .left-info {
+            padding-bottom: 32767px;
+            margin-bottom: -32767px;
+         }
+      }
+      .categories {
+         background-color: $negro;
+         color: $blanco;
+         text-transform: uppercase;
+      }
+   }
+}
+
+.container-project {
+   @include susy-breakpoint($phone, $susy) {
+      @include span(12);
+      .project-page {
+         @include span(12);
+         .project-slide {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            @include span(12);
+            .left {
+               @include span(12);
+               .icon-agency {
+                  @include span(3);
+                  padding-left: 5%;
+                  .img-agency {
+                     width: 46px;
+                     height: 46px;
+                  }
+               }
+               .content-project {
+                  @include pad(0,1);
+                  @include span(9);
+                  .project-title {
+                     @include span(12);
+                     font-size: 1.3rem;
+                  }
+                  .slide-content {
+                     @include span(12);
+                     font-size: 0.9rem;
+                     padding-bottom: 3%;
+                     .slide-btn {
+                        @include span(12);
+                     }
+                  }
+               }
+            }
+            .right {
+               @include span(12);
+               padding-top: 3%;
+               .img-primary {
+                  @include pad(1,1);
+                  @include span(12);
+               }
+            }
+         }
+         .project-info {
+            @include span(12);
+            .left-info {
+               @include span(12);
+               .grid-images {
+                  @include span(12);
+                  .image {
+                     @include span(12);
+                     .img-xtra {
+                        @include span(12);
+                     }
+                  }
+               }
+            }
+            .right-info {
+               @include pad(1,1);
+               @include span(12);
+               font-size: 0.9rem;
+            }
+         }
+         .categories {
+            @include pad(1,1);
+            @include span(12);
+            padding-top: 2%;
+            padding-bottom: 2%;
+            .categorie {
+               @include span(12);
+               padding: 1%;
+               font-size: 0.75rem;
+               .img-category {
+                  width: 26px;
+                  height: 26px;
+               }
+            }
+         }
+      }
+   }
+   @include susy-breakpoint($tablet, $susy) {
+      @include span(12);
+      .project-page {
+         @include span(12);
+         .project-slide {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            @include span(12);
+            .left {
+               @include span(6 first);
+               .icon-agency {
+                  @include span(3);
+                  padding-left: 5%;
+                  .img-agency {
+                     width: 66px;
+                     height: 66px;
+                  }
+               }
+               .content-project {
+                  @include pad(1,1);
+                  @include span(9);
+                  .project-title {
+                     @include span(12);
+                     font-size: 1.5rem;
+                  }
+                  .slide-content {
+                     @include span(12);
+                     font-size: 1.2rem;
+                     padding-bottom: 10%;
+                     .slide-btn {
+                        @include span(12);
+                     }
+                  }
+               }
+            }
+            .right {
+               @include span(6 last);
+               padding-top: 15%;
+               .img-primary {
+                  @include pad(1,1);
+                  @include span(12);
+               }
+            }
+         }
+         .project-info {
+            @include span(12);
+            .left-info {
+               @include span(12);
+               .grid-images {
+                  @include span(12);
+                  .image {
+                     @include gallery(6);
+                     .img-xtra {
+                        @include span(12);
+                     }
+                  }
+               }
+            }
+            .right-info {
+               @include pad(1,1);
+               @include span(12);
+               font-size: 1.2rem;
+            }
+         }
+         .categories {
+            @include pad(1,1);
+            @include span(12);
+            padding-top: 2%;
+            padding-bottom: 2%;
+            .categorie {
+               @include gallery(4);
+               padding: 1.5%;
+               .img-category {
+                  width: 33px;
+                  height: 33px;
+               }
+            }
+         }
+      }
+   }
+   @include susy-breakpoint($desktop, $susy) {
+      @include span(12);
+      .project-page {
+         @include span(12);
+         .project-slide {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            @include span(12);
+            .left {
+               @include span(6 first);
+               .icon-agency {
+                  @include span(2);
+                  padding-left: 5%;
+                  .img-agency {
+                     width: 76px;
+                     height: 76px;
+                  }
+               }
+               .content-project {
+                  @include pad(1,1);
+                  @include span(8);
+                  .project-title {
+                     @include span(12);
+                     font-size: 1.5rem;
+                  }
+                  .slide-content {
+                     @include span(12);
+                     font-size: 1.2rem;
+                     padding-bottom: 10%;
+                     .slide-btn {
+                        @include span(12);
+                     }
+                  }
+               }
+            }
+            .right {
+               @include span(6 last);
+               padding-top: 0%;
+               .img-primary {
+                  @include pad(0.5,0.5);
+                  @include span(11);
+               }
+            }
+         }
+         .project-info {
+            @include span(12);
+            .left-info {
+               @include span(6 first);
+               .grid-images {
+                  @include span(12);
+                  .image {
+                     @include gallery(6);
+                     .img-xtra {
+                        @include span(12);
+                     }
+                  }
+               }
+            }
+            .right-info {
+               @include pad(0,0);
+               @include span(6 last);
+               padding: 5%;
+            }
+         }
+         .categories {
+            @include pad(1,1);
+            @include span(12);
+            padding-top: 2%;
+            padding-bottom: 2%;
+            .categorie {
+               @include gallery(4);
+               padding: 1.5%;
+               .img-category {
+                  width: 33px;
+                  height: 33px;
+               }
+            }
+         }
+      }
+   }
+}

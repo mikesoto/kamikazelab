@@ -41,15 +41,15 @@
 					<div class="division-overlay">
 						<div class="agency">
 							<div class="content-agency">
-								<img src="images/agencia.png" class="icon">
-								<h2>Agencia</h2>
+								<!-- <img src="images/agencia.png" class="icon"> -->
+								<h2>Creativa</h2>
 								<p>Nuestras ideas buscan innovar en el mundo digital que cambia constantemente.</p>
 							</div>
 						</div>
 						<div class="lab">
 							<div class="content-lab">
-								<img src="images/lab.png" class="icon">
-								<h2>Laboratorio</h2>
+								<!-- <img src="images/lab.png" class="icon"> -->
+								<h2>Analítica</h2>
 								<p>Sustentadas por toda la información que nos da el mundo digital para poder hacer llegar el mensaje a la audiencia correcta.</p>
 							</div>
 						</div>

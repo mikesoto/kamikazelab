@@ -46,7 +46,7 @@
 	<div class="menu-kamikaze">
 		<div class="logo">
 			<a href="/">
-				<img src="images/logo-kamikazelab.png">
+				<img src="/images/logo-kamikazelab.png">
 			</a>
 		</div>
 		<div class="sections">
