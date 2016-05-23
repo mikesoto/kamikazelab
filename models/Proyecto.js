@@ -26,7 +26,8 @@ Proyecto.add({
 	backround_color: { type: String, label: 'Color de Fondo', required: false },
 	content: {
 		brief: { type: Types.Html, label: 'Extracto', wysiwyg: true, height: 150 },
-		extended: { type: Types.Html, label: 'Cuerpo', wysiwyg: true, height: 400 }
+		extended: { type: Types.Html, label: 'Cuerpo', wysiwyg: true, height: 400 },
+		quotes: { type: Types.Html, label: 'Quotes', wysiwyg: true, height: 200 }
 	},
 	site_link: { type: String, label: 'URL del Sitio', required: false },
 	categories: { type: Types.Relationship, label: 'Categorías', ref: 'ProyectoCategory', many: true }

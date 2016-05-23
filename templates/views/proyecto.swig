@@ -52,6 +52,7 @@
 				</div>
 				<div class="right-info">
 					<p>{{ data.proyecto.content.full | raw }}</p>
+					<p>{{ data.proyecto.content.quotes | safe }}</p>
 				</div>
 			</div>
 			<div class="categories">
