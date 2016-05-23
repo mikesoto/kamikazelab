@@ -144,7 +144,7 @@
 			</div>
 			<div class="projects">
 				<div class="title">
-					<h2>PROYECTOS</h2>
+					<a href="proyectos"><h2>PROYECTOS</h2></a>
 				</div>
 				<div class="grid-projects">
 					{% if data.proyectos.results.length %}

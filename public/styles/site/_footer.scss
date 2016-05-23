@@ -60,38 +60,38 @@
          @include span(12);
       }
       .schema {
-         @include span(3 first);
-         padding-top: 5%;
+         @include span(5 first);
+         padding-top: 3%;
          padding-left: 3%;
          p {
-            font-size: 1rem;
+            font-size: 0.5rem;
          }
          .tel {
-            margin-bottom: 10%;
+            margin-bottom: 5%;
          }
       }
       .follow {
-         @include span(4 last);
-         padding-top: 5%;
+         @include span(6 last);
+         padding-top: 3%;
          .follow-icons {
             .single-follow-icon {
-               height: 46px;
-               margin-right: 25px;
-               -moz-border-radius: 23px;
-               -webkit-border-radius: 23px;
-               border-radius: 23px;
-               -khtml-border-radius: 23px;
+               height: 26px;
+               margin-right: 10px;
+               -moz-border-radius: 13px;
+               -webkit-border-radius: 13px;
+               border-radius: 13px;
+               -khtml-border-radius: 13px;
                a {
                   img {
-                     height: 46px;
+                     height: 26px;
                   }
                }
             }
          }
       }
       .title-footer {
-         font-size: 1.5rem;
-         margin-bottom: 15%;
+         font-size: 0.8rem;
+         margin-bottom: 5%;
       }
    }
    @include susy-breakpoint($tablet, $susy) {
@@ -137,6 +137,52 @@
       }
       .title-footer {
          font-size: 1.2rem;
+         margin-bottom: 15%;
+      }
+   }
+   @include susy-breakpoint($desktop, $susy) {
+      @include span(12);
+      .footer-wrapper {
+         @include span(12);
+      }
+      .img-footer {
+         @include span(12);
+      }
+      .footer-overlay {
+         @include span(12);
+      }
+      .schema {
+         @include span(3 first);
+         padding-top: 5%;
+         padding-left: 3%;
+         p {
+            font-size: 1rem;
+         }
+         .tel {
+            margin-bottom: 10%;
+         }
+      }
+      .follow {
+         @include span(4 last);
+         padding-top: 5%;
+         .follow-icons {
+            .single-follow-icon {
+               height: 46px;
+               margin-right: 25px;
+               -moz-border-radius: 23px;
+               -webkit-border-radius: 23px;
+               border-radius: 23px;
+               -khtml-border-radius: 23px;
+               a {
+                  img {
+                     height: 46px;
+                  }
+               }
+            }
+         }
+      }
+      .title-footer {
+         font-size: 1.5rem;
          margin-bottom: 15%;
       }
    }

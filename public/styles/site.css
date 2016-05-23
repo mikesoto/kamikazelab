@@ -398,23 +398,15 @@ body {
     min-height: 100%;
     width: auto;
     height: auto; }
-  .container-fluid .division .division-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    height: auto; }
-    .container-fluid .division .division-overlay .agency .content-agency {
-      text-align: center; }
-    .container-fluid .division .division-overlay .lab .content-lab {
-      text-align: center; }
-    .container-fluid .division .division-overlay h2 {
-      text-transform: uppercase;
-      color: #fff; }
-    .container-fluid .division .division-overlay p {
-      color: #fff; }
+  .container-fluid .division .division-overlay .agency .content-agency {
+    text-align: center; }
+  .container-fluid .division .division-overlay .lab .content-lab {
+    text-align: center; }
+  .container-fluid .division .division-overlay h2 {
+    text-transform: uppercase;
+    color: #fff; }
+  .container-fluid .division .division-overlay p {
+    color: #fff; }
 
 .container-fluid .what-we-do {
   background-color: #000; }
@@ -458,6 +450,10 @@ body {
   background-color: #2f2f2f; }
   .container-fluid .projects .title {
     color: #fff; }
+    .container-fluid .projects .title a {
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer; }
   .container-fluid .projects .grid-projects {
     background-color: #2f2f2f; }
     .container-fluid .projects .grid-projects .project {
@@ -500,40 +496,55 @@ body {
         width: 100%;
         float: left;
         margin-left: 0;
-        margin-right: 0; }
+        margin-right: 0;
+        display: none; }
       .container-fluid .division .division-overlay {
         width: 100%;
         float: left;
         margin-left: 0;
         margin-right: 0; }
         .container-fluid .division .division-overlay .agency {
-          width: 50%;
+          padding-left: 12.5%;
+          padding-right: 12.5%;
+          width: 100%;
           float: left;
-          padding-top: 15%; }
+          margin-left: 0;
+          margin-right: 0;
+          background-color: #d92830;
+          padding-top: 25%;
+          padding-bottom: 5%; }
           .container-fluid .division .division-overlay .agency .content-agency {
-            padding-left: 16.66667%;
-            padding-right: 16.66667%;
-            width: 66.66667%;
-            float: left; }
+            padding-left: 0%;
+            padding-right: 0%;
+            width: 100%;
+            float: left;
+            margin-left: 0;
+            margin-right: 0; }
         .container-fluid .division .division-overlay .lab {
-          width: 50%;
+          padding-left: 12.5%;
+          padding-right: 12.5%;
+          width: 100%;
           float: left;
-          padding-top: 15%; }
+          margin-left: 0;
+          margin-right: 0;
+          background-color: #c41f25;
+          padding-top: 5%;
+          padding-bottom: 5%; }
           .container-fluid .division .division-overlay .lab .content-lab {
-            padding-left: 50%;
-            padding-right: 16.66667%;
+            padding-left: 0%;
+            padding-right: 0%;
             width: 100%;
             float: left;
             margin-left: 0;
             margin-right: 0; }
         .container-fluid .division .division-overlay .icon {
-          width: 120px;
-          height: 120px;
+          width: 60px;
+          height: 60px;
           margin-bottom: 5%; }
         .container-fluid .division .division-overlay h2 {
-          font-size: 1.65rem; }
+          font-size: 1.3rem; }
         .container-fluid .division .division-overlay p {
-          font-size: 1.2rem; }
+          font-size: 0.9rem; }
     .container-fluid .what-we-do {
       width: 100%;
       float: left;
@@ -544,9 +555,9 @@ body {
         float: left;
         margin-left: 0;
         margin-right: 0;
-        height: 230px; }
+        height: 150px; }
         .container-fluid .what-we-do .text .default-text {
-          padding-top: 5%;
+          padding-top: 10%;
           padding-left: 4.16667%;
           padding-right: 4.16667%;
           font-size: 1.5rem; }
@@ -586,25 +597,10 @@ body {
         margin-left: 0;
         margin-right: 0; }
         .container-fluid .what-we-do .areas .area {
-          width: 25%;
-          float: left; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 1) {
-            margin-left: 0;
-            margin-right: -100%;
-            clear: both;
-            margin-left: 0; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 2) {
-            margin-left: 25%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 3) {
-            margin-left: 50%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 4) {
-            margin-left: 75%;
-            margin-right: -100%;
-            clear: none; }
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0; }
           .container-fluid .what-we-do .areas .area .img-normal {
             width: 100%;
             float: left;
@@ -637,9 +633,10 @@ body {
         float: left;
         margin-left: 0;
         margin-right: 0;
-        height: 200px;
-        padding-top: 60px; }
+        height: 160px;
+        padding-top: 40px; }
         .container-fluid .projects .title h2 {
+          font-size: 1.5rem;
           padding-left: 4.16667%;
           padding-right: 4.16667%; }
       .container-fluid .projects .grid-projects {
@@ -648,37 +645,26 @@ body {
         margin-left: 0;
         margin-right: 0; }
         .container-fluid .projects .grid-projects .project {
-          width: 33.33333%;
-          float: left; }
-          .container-fluid .projects .grid-projects .project:nth-child(3n + 1) {
-            margin-left: 0;
-            margin-right: -100%;
-            clear: both;
-            margin-left: 0; }
-          .container-fluid .projects .grid-projects .project:nth-child(3n + 2) {
-            margin-left: 33.33333%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .projects .grid-projects .project:nth-child(3n + 3) {
-            margin-left: 66.66667%;
-            margin-right: -100%;
-            clear: none; }
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          margin-right: 0; }
           .container-fluid .projects .grid-projects .project:hover {
             cursor: pointer; }
             .container-fluid .projects .grid-projects .project:hover .name {
-              bottom: 65px; }
+              bottom: 55px; }
             .container-fluid .projects .grid-projects .project:hover .goToProject {
               bottom: 15px; }
           .container-fluid .projects .grid-projects .project .left {
             padding-top: 0.5em;
             padding-left: 0.5em;
-            width: 33.33333%;
+            width: 50%;
             float: left; }
             .container-fluid .projects .grid-projects .project .left .img-agency {
               width: 45px;
               height: 45px; }
           .container-fluid .projects .grid-projects .project .right {
-            width: 66.66667%;
+            width: 50%;
             float: left; }
             .container-fluid .projects .grid-projects .project .right .img-project {
               width: 100%;
@@ -691,14 +677,14 @@ body {
             bottom: 15px;
             left: 0;
             padding-left: 0.5em;
-            font-size: 1.3rem; }
+            font-size: 0.9rem; }
           .container-fluid .projects .grid-projects .project .goToProject {
             width: 41.66667%;
             float: left;
-            bottom: -30px;
+            bottom: -20%;
             left: 0;
             padding-left: 0.5em;
-            font-size: 1.1rem; } }
+            font-size: 0.8rem; } }
 
 @media (min-width: 768px) {
   .container-fluid {
@@ -720,15 +706,26 @@ body {
         width: 100%;
         float: left;
         margin-left: 0;
-        margin-right: 0; }
+        margin-right: 0;
+        display: block; }
       .container-fluid .division .division-overlay {
         width: 100%;
         float: left;
         margin-left: 0;
-        margin-right: 0; }
+        margin-right: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto; }
         .container-fluid .division .division-overlay .agency {
+          padding-left: 0%;
+          padding-right: 0%;
           width: 50%;
           float: left;
+          background-color: transparent;
           padding-top: 10%; }
           .container-fluid .division .division-overlay .agency .content-agency {
             padding-left: 12.5%;
@@ -736,8 +733,11 @@ body {
             width: 75%;
             float: left; }
         .container-fluid .division .division-overlay .lab {
+          padding-left: 0%;
+          padding-right: 0%;
           width: 50%;
           float: left;
+          background-color: transparent;
           padding-top: 10%; }
           .container-fluid .division .division-overlay .lab .content-lab {
             padding-left: 37.5%;
@@ -766,7 +766,7 @@ body {
         margin-right: 0;
         height: 200px; }
         .container-fluid .what-we-do .text .default-text {
-          padding-top: 5%;
+          padding-top: 8%;
           padding-left: 4.16667%;
           padding-right: 4.16667%;
           font-size: 1.2rem; }
@@ -869,37 +869,33 @@ body {
         margin-left: 0;
         margin-right: 0; }
         .container-fluid .projects .grid-projects .project {
-          width: 33.33333%;
+          width: 50%;
           float: left; }
-          .container-fluid .projects .grid-projects .project:nth-child(3n + 1) {
+          .container-fluid .projects .grid-projects .project:nth-child(2n + 1) {
             margin-left: 0;
             margin-right: -100%;
             clear: both;
             margin-left: 0; }
-          .container-fluid .projects .grid-projects .project:nth-child(3n + 2) {
-            margin-left: 33.33333%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .projects .grid-projects .project:nth-child(3n + 3) {
-            margin-left: 66.66667%;
+          .container-fluid .projects .grid-projects .project:nth-child(2n + 2) {
+            margin-left: 50%;
             margin-right: -100%;
             clear: none; }
           .container-fluid .projects .grid-projects .project:hover {
             cursor: pointer; }
             .container-fluid .projects .grid-projects .project:hover .name {
-              bottom: 65px; }
+              bottom: 50px; }
             .container-fluid .projects .grid-projects .project:hover .goToProject {
               bottom: 15px; }
           .container-fluid .projects .grid-projects .project .left {
             padding-top: 0.5em;
             padding-left: 0.5em;
-            width: 33.33333%;
+            width: 50%;
             float: left; }
             .container-fluid .projects .grid-projects .project .left .img-agency {
               width: 40px;
               height: 40px; }
           .container-fluid .projects .grid-projects .project .right {
-            width: 66.66667%;
+            width: 50%;
             float: left; }
             .container-fluid .projects .grid-projects .project .right .img-project {
               width: 100%;
@@ -941,13 +937,23 @@ body {
         width: 100%;
         float: left;
         margin-left: 0;
-        margin-right: 0; }
+        margin-right: 0;
+        display: block; }
       .container-fluid .division .division-overlay {
         width: 100%;
         float: left;
         margin-left: 0;
-        margin-right: 0; }
+        margin-right: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto; }
         .container-fluid .division .division-overlay .agency {
+          padding-left: 0%;
+          padding-right: 0%;
           width: 50%;
           float: left;
           padding-top: 15%; }
@@ -957,6 +963,8 @@ body {
             width: 66.66667%;
             float: left; }
         .container-fluid .division .division-overlay .lab {
+          padding-left: 0%;
+          padding-right: 0%;
           width: 50%;
           float: left;
           padding-top: 15%; }
@@ -987,7 +995,7 @@ body {
         margin-right: 0;
         height: 230px; }
         .container-fluid .what-we-do .text .default-text {
-          padding-top: 5%;
+          padding-top: 6%;
           padding-left: 4.16667%;
           padding-right: 4.16667%;
           font-size: 1.5rem; }
@@ -1108,19 +1116,19 @@ body {
           .container-fluid .projects .grid-projects .project:hover {
             cursor: pointer; }
             .container-fluid .projects .grid-projects .project:hover .name {
-              bottom: 65px; }
+              bottom: 55px; }
             .container-fluid .projects .grid-projects .project:hover .goToProject {
               bottom: 15px; }
           .container-fluid .projects .grid-projects .project .left {
             padding-top: 0.5em;
             padding-left: 0.5em;
-            width: 33.33333%;
+            width: 50%;
             float: left; }
             .container-fluid .projects .grid-projects .project .left .img-agency {
               width: 45px;
               height: 45px; }
           .container-fluid .projects .grid-projects .project .right {
-            width: 66.66667%;
+            width: 50%;
             float: left; }
             .container-fluid .projects .grid-projects .project .right .img-project {
               width: 100%;
@@ -1137,7 +1145,7 @@ body {
           .container-fluid .projects .grid-projects .project .goToProject {
             width: 41.66667%;
             float: left;
-            bottom: -15%;
+            bottom: -20%;
             left: 0;
             padding-left: 0.5em;
             font-size: 1.0rem; } }
@@ -1197,31 +1205,31 @@ body {
       margin-left: 0;
       margin-right: 0; }
     .footer .schema {
-      width: 25%;
+      width: 41.66667%;
       float: left;
-      padding-top: 5%;
+      padding-top: 3%;
       padding-left: 3%; }
       .footer .schema p {
-        font-size: 1rem; }
+        font-size: 0.5rem; }
       .footer .schema .tel {
-        margin-bottom: 10%; }
+        margin-bottom: 5%; }
     .footer .follow {
-      width: 33.33333%;
+      width: 50%;
       float: right;
       margin-right: 0;
-      padding-top: 5%; }
+      padding-top: 3%; }
       .footer .follow .follow-icons .single-follow-icon {
-        height: 46px;
-        margin-right: 25px;
-        -moz-border-radius: 23px;
-        -webkit-border-radius: 23px;
-        border-radius: 23px;
-        -khtml-border-radius: 23px; }
+        height: 26px;
+        margin-right: 10px;
+        -moz-border-radius: 13px;
+        -webkit-border-radius: 13px;
+        border-radius: 13px;
+        -khtml-border-radius: 13px; }
         .footer .follow .follow-icons .single-follow-icon a img {
-          height: 46px; }
+          height: 26px; }
     .footer .title-footer {
-      font-size: 1.5rem;
-      margin-bottom: 15%; } }
+      font-size: 0.8rem;
+      margin-bottom: 5%; } }
 
 @media (min-width: 768px) {
   .footer {
@@ -1269,4 +1277,52 @@ body {
           height: 36px; }
     .footer .title-footer {
       font-size: 1.2rem;
+      margin-bottom: 15%; } }
+
+@media (min-width: 1200px) {
+  .footer {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    .footer .footer-wrapper {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    .footer .img-footer {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    .footer .footer-overlay {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    .footer .schema {
+      width: 25%;
+      float: left;
+      padding-top: 5%;
+      padding-left: 3%; }
+      .footer .schema p {
+        font-size: 1rem; }
+      .footer .schema .tel {
+        margin-bottom: 10%; }
+    .footer .follow {
+      width: 33.33333%;
+      float: right;
+      margin-right: 0;
+      padding-top: 5%; }
+      .footer .follow .follow-icons .single-follow-icon {
+        height: 46px;
+        margin-right: 25px;
+        -moz-border-radius: 23px;
+        -webkit-border-radius: 23px;
+        border-radius: 23px;
+        -khtml-border-radius: 23px; }
+        .footer .follow .follow-icons .single-follow-icon a img {
+          height: 46px; }
+    .footer .title-footer {
+      font-size: 1.5rem;
       margin-bottom: 15%; } }
