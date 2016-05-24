@@ -199,12 +199,91 @@
 				<div class="grid-projects">
 					{% if data.proyectos.results.length %}
 						{% for proyecto in data.proyectos.results %}
-							<div class="project">
+							{% if loop.index == 1 %}
+								<div class="contenedor1" style="background-color:{{ proyecto.backround_color}};">
+									<div class="icon-agency">
+										<img src="images/agencia.png" class="img-agency" alt="Icono de la agencia">
+									</div>
+									<div class="image">
+										<img src="/images/proyectos/{{ proyecto.image_primary.filename }}" class="img-project" alt="Imagen principal del proyecto">
+									</div>
+									<div class="name">{{ proyecto.title }}</div>
+									<div class="goToProject">
+										<a href="/proyecto/{{ proyecto.slug }}">Ir a Proyecto</a>
+									</div>
+								</div>
+							{% endif %}
+							{% if loop.index == 2 %}
+								<div class="contenedor2" style="background-color:{{ proyecto.backround_color}};">
+									<div class="icon-agency">
+										<img src="images/agencia.png" class="img-agency" alt="Icono de la agencia">
+									</div>
+									<div class="image">
+										<img src="/images/proyectos/{{ proyecto.image_primary.filename }}" class="img-project" alt="Imagen principal del proyecto">
+									</div>
+									<div class="name">{{ proyecto.title }}</div>
+									<div class="goToProject">
+										<a href="/proyecto/{{ proyecto.slug }}">Ir a Proyecto</a>
+									</div>
+								</div>
+							{% endif %}
+							{% if loop.index == 3 || loop.index == 4 || loop.index == 7 || loop.index == 8 %}
+								<div class="contenedor3" style="background-color:{{ proyecto.backround_color}};">
+									<div class="icon-agency">
+										<img src="images/agencia.png" class="img-agency" alt="Icono de la agencia">
+									</div>
+									<div class="image">
+										<img src="/images/proyectos/{{ proyecto.image_small.filename }}" class="img-project" alt="Imagen principal del proyecto">
+									</div>
+									<div class="name">{{ proyecto.title }}</div>
+									<div class="goToProject">
+										<a href="/proyecto/{{ proyecto.slug }}">Ir a Proyecto</a>
+									</div>
+								</div>
+							{% endif %}
+							{% if loop.index == 5 %}
+								<div class="contenedor5" style="background-color:{{ proyecto.backround_color}};">
+									<div class="icon-agency">
+										<img src="images/agencia.png" class="img-agency" alt="Icono de la agencia">
+									</div>
+									<div class="image">
+										<img src="/images/proyectos/{{ proyecto.image_primary.filename }}" class="img-project" alt="Imagen principal del proyecto">
+									</div>
+									<div class="name">{{ proyecto.title }}</div>
+									<div class="goToProject">
+										<a href="/proyecto/{{ proyecto.slug }}">Ir a Proyecto</a>
+									</div>
+								</div>
+							{% endif %}
+							{% if loop.index == 6 %}
+								<div class="contenedor6" style="background-color:{{ proyecto.backround_color}};">
+									<div class="icon-agency">
+										<img src="images/agencia.png" class="img-agency" alt="Icono de la agencia">
+									</div>
+									<div class="image">
+										<img src="/images/proyectos/{{ proyecto.image_primary.filename }}" class="img-project" alt="Imagen principal del proyecto">
+									</div>
+									<div class="name">{{ proyecto.title }}</div>
+									<div class="goToProject">
+										<a href="/proyecto/{{ proyecto.slug }}">Ir a Proyecto</a>
+									</div>
+								</div>
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+				</div>
+			</div>
+			<!-- projects-mobile -->
+			<div class="projects-mobile">
+				<div class="grid-projects">
+					{% if data.proyectos.results.length %}
+						{% for proyecto in data.proyectos.results %}
+							<div class="project" style="background-color:{{ proyecto.backround_color}};">
 								<div class="left">
 									<img src="images/agencia.png" class="img-agency" alt="Icono de la agencia">
 								</div>
 								<div class="right">
-									<img src="/images/proyectos/{{ proyecto.image_primary.filename }}" class="img-project" alt="Imagen principal del proyecto">
+									<img src="/images/proyectos/{{ proyecto.image_small.filename }}" class="img-project" alt="Imagen principal del proyecto">
 								</div>
 								<div class="name">{{ proyecto.title }}</div>
 								<div class="goToProject">
@@ -214,7 +293,7 @@
 						{% endfor %}
 					{% endif %}
 				</div>
-			</div>
+			</div
 		</div>
 
 {% endblock %}

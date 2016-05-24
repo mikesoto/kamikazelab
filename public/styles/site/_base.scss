@@ -1,3 +1,28 @@
+/* @font-face */
+@font-face {
+  font-family: 'GothamBookRegular';
+  src: url('../fonts/kamikaze-font/gotham-book-webfont.woff');
+  src: url('../fonts/kamikaze-font/gotham-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamLightRegular';
+  src: url('../fonts/kamikaze-font/gotham-light-webfont.woff');
+  src: url('../fonts/kamikaze-font/gotham-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamMediumRegular';
+  src: url('../fonts/kamikaze-font/gotham-medium-webfont.woff');
+  src: url('../fonts/kamikaze-font/gotham-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 100%;
   margin: 0;
