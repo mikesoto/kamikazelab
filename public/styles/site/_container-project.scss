@@ -194,7 +194,7 @@
             padding-top: 2%;
             padding-bottom: 2%;
             .categorie {
-               @include gallery(4);
+               @include gallery(6);
                padding: 1.5%;
                .img-category {
                   width: 33px;
@@ -265,7 +265,8 @@
             .right-info {
                @include pad(0,0);
                @include span(6 last);
-               padding: 5%;
+               padding: 1%;
+               font-size: 1rem;
             }
          }
          .categories {

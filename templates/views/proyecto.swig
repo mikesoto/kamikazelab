@@ -67,14 +67,16 @@
 			</div>
 		</div>
 	</div>
-	<div>
-		{% if data.prev_proyecto %}
-			<a href="{{ data.prev_proyecto.slug }}" class="label label-default">ANTERIOR</a>
-		{% endif %}
-	</div>
-	<div>
-		{% if data.next_proyecto %}
-			<a href="{{ data.next_proyecto.slug }}" class="label label-default">SIGUIENTE</a>
-		{% endif %}
+	<div class="projects-btns">
+		<div class="btn-prev">
+			{% if data.prev_proyecto %}
+				<a href="{{ data.prev_proyecto.slug }}" class="label label-default">ANTERIOR</a>
+			{% endif %}
+		</div>
+		<div class="btn-next">
+			{% if data.next_proyecto %}
+				<a href="{{ data.next_proyecto.slug }}" class="label label-default">SIGUIENTE</a>
+			{% endif %}
+		</div>
 	</div>
 {% endblock %}

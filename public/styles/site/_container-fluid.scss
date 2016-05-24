@@ -131,6 +131,50 @@
          }
       }
       .grid-projects {
+         .contenedor1,
+         .contenedor2,
+         .contenedor3,
+         .contenedor4,
+         .contenedor5,
+         .contenedor6,
+         .contenedor7,
+         .contenedor8 {
+            position: relative;
+            overflow: hidden;
+            .name {
+               position: absolute;
+               color: $blanco;
+               text-transform: uppercase;
+               -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+               transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+            }
+            .goToProject {
+               position: absolute;
+               -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+               transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+               a {
+                  text-decoration: none;
+                  padding: 6px 10px;
+                  border: 1px solid #ffffff;
+                  text-transform: uppercase;
+                  color: $blanco;
+               }
+            }
+         }
+
+      }
+   }
+   .projects-mobile {
+      background-color: $gris-oscuro;
+      .title {
+         color: $blanco;
+         a {
+            text-decoration: none;
+            color: $blanco;
+            cursor: pointer;
+         }
+      }
+      .grid-projects {
          background-color: $gris-oscuro;
          .project {
             position: relative;
@@ -264,6 +308,22 @@
          }
       }
       .projects {
+         @include span(12);
+         .title {
+            @include span(12);
+            height: 160px;
+            padding-top: 40px;
+            h2 {
+               font-size: 1.35rem;
+               @include pad(0.5,0.5);
+            }
+         }
+         .grid-projects {
+            display: none;
+         }
+      }
+      .projects-mobile {
+         display: block;
          @include span(12);
          .title {
             @include span(12);
@@ -444,6 +504,9 @@
             display: none;
          }
       }
+      .projects-mobile {
+         display: none;
+      }
       .projects {
          @include span(12);
          .title {
@@ -451,51 +514,224 @@
             height: 200px;
             padding-top: 60px;
             h2 {
-               font-size: 1.2rem;
+               font-size: 1.5rem;
                @include pad(0.5,0.5);
             }
          }
          .grid-projects {
+            display: block;
             @include span(12);
-            .project {
-               @include gallery(6);
+            .contenedor1 {
+               @include span(4);
+               height: 460px;
                &:hover {
                   cursor: pointer;
                   .name {
-                     bottom: 50px;
+                     bottom: 55px;
                   }
                   .goToProject {
                      bottom: 15px;
                   }
                }
-               .left {
-                  padding-top: 0.5em;
-                  padding-left: 0.5em;
-                  @include span(6);
+               .icon-agency {
+                  @include span(12);
+                  padding: 5%;
                   .img-agency {
-                     width: 40px;
-                     height: 40px;
+                     width: 50px;
+                     height: 50px;
                   }
                }
-               .right {
-                  @include span(6);
+               .image {
+                  @include span(12);
                   .img-project {
+                     @include pad(0.5,0.5);
                      @include span(12);
                   }
                }
                .name {
-                  @include span(6);
+                  @include span(5);
                   bottom: 15px;
                   left: 0;
                   padding-left: 0.5em;
-                  font-size: 1.0rem;
+                  font-size: 1.15rem;
                }
                .goToProject {
-                  @include span(7);
-                  bottom: -30%;
+                  @include span(8);
+                  bottom: -25%;;
                   left: 0;
                   padding-left: 0.5em;
-                  font-size: 0.9rem;
+                  font-size: 0.85rem;
+               }
+            }
+            .contenedor2 {
+               @include span(8);
+               height: 230px;
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .icon-agency {
+                  @include span(6);
+                  padding: 5%;
+                  .img-agency {
+                     width: 50px;
+                     height: 50px;
+                  }
+               }
+               .image {
+                  @include span(6);
+                  .img-project {
+                     @include pad(0,0);
+                     @include span(12);
+                     height: 230px;
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.15rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -25%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 0.85rem;
+               }
+            }
+            .contenedor3 {
+               @include span(4);
+               height: 230px;
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .icon-agency {
+                  @include span(4);
+                  padding: 5%;
+                  .img-agency {
+                     width: 50px;
+                     height: 50px;
+                  }
+               }
+               .image {
+                  @include span(8);
+                  .img-project {
+                     @include pad(0,0);
+                     @include span(12);
+                     height: 230px;
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.15rem;
+               }
+               .goToProject {
+                  @include span(8);
+                  bottom: -25%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 0.85rem;
+               }
+            }
+            .contenedor5 {
+               @include span(4 last);
+               height: 460px;
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .icon-agency {
+                  @include span(12);
+                  padding: 5%;
+                  .img-agency {
+                     width: 50px;
+                     height: 50px;
+                  }
+               }
+               .image {
+                  @include span(12);
+                  .img-project {
+                     @include pad(0.5,0.5);
+                     @include span(12);
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.15rem;
+               }
+               .goToProject {
+                  @include span(8);
+                  bottom: -25%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 0.85rem;
+               }
+            }
+            .contenedor6 {
+               @include span(8 first);
+               height: 230px;
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .icon-agency {
+                  @include span(6);
+                  padding: 5%;
+                  .img-agency {
+                     width: 50px;
+                     height: 50px;
+                  }
+               }
+               .image {
+                  @include span(6);
+                  .img-project {
+                     @include pad(0,0);
+                     @include span(12);
+                     height: 230px;
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.15rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -25%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 0.85rem;
                }
             }
          }
@@ -623,6 +859,9 @@
             display: none;
          }
       }
+      .projects-mobile {
+         display: none;
+      }
       .projects {
          @include span(12);
          .title {
@@ -635,9 +874,11 @@
             }
          }
          .grid-projects {
+            display: block;
             @include span(12);
-            .project {
-               @include gallery(4);
+            .contenedor1 {
+               @include span(4);
+               height: 600px;
                &:hover {
                   cursor: pointer;
                   .name {
@@ -647,19 +888,190 @@
                      bottom: 15px;
                   }
                }
-               .left {
-                  padding-top: 0.5em;
-                  padding-left: 0.5em;
-                  @include span(6);
+               .icon-agency {
+                  @include span(12);
+                  padding: 5%;
                   .img-agency {
-                     width: 45px;
-                     height: 45px;
+                     width: 50px;
+                     height: 50px;
                   }
                }
-               .right {
+               .image {
+                  @include span(12);
+                  .img-project {
+                     @include pad(0.5,0.5);
+                     @include span(12);
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.3rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -20%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.0rem;
+               }
+            }
+            .contenedor2 {
+               @include span(8);
+               height: 300px;
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .icon-agency {
+                  @include span(6);
+                  padding: 5%;
+                  .img-agency {
+                     width: 50px;
+                     height: 50px;
+                  }
+               }
+               .image {
                   @include span(6);
                   .img-project {
+                     @include pad(0,0);
                      @include span(12);
+                     height: 300px;
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.3rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -20%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.0rem;
+               }
+            }
+            .contenedor3 {
+               @include span(4);
+               height: 300px;
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .icon-agency {
+                  @include span(4);
+                  padding: 5%;
+                  .img-agency {
+                     width: 50px;
+                     height: 50px;
+                  }
+               }
+               .image {
+                  @include span(8);
+                  .img-project {
+                     @include pad(0,0);
+                     @include span(12);
+                     height: 600px;
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.3rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -20%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.0rem;
+               }
+            }
+            .contenedor5 {
+               @include span(4 last);
+               height: 600px;
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .icon-agency {
+                  @include span(12);
+                  padding: 5%;
+                  .img-agency {
+                     width: 50px;
+                     height: 50px;
+                  }
+               }
+               .image {
+                  @include span(12);
+                  .img-project {
+                     @include pad(0.5,0.5);
+                     @include span(12);
+                  }
+               }
+               .name {
+                  @include span(5);
+                  bottom: 15px;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.3rem;
+               }
+               .goToProject {
+                  @include span(5);
+                  bottom: -20%;;
+                  left: 0;
+                  padding-left: 0.5em;
+                  font-size: 1.0rem;
+               }
+            }
+            .contenedor6 {
+               @include span(8 first);
+               height: 300px;
+               &:hover {
+                  cursor: pointer;
+                  .name {
+                     bottom: 55px;
+                  }
+                  .goToProject {
+                     bottom: 15px;
+                  }
+               }
+               .icon-agency {
+                  @include span(6);
+                  padding: 5%;
+                  .img-agency {
+                     width: 50px;
+                     height: 50px;
+                  }
+               }
+               .image {
+                  @include span(6);
+                  .img-project {
+                     @include pad(0,0);
+                     @include span(12);
+                     height: 300px;
                   }
                }
                .name {
