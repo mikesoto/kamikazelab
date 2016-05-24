@@ -158,6 +158,9 @@
                   border: 1px solid #ffffff;
                   text-transform: uppercase;
                   color: $blanco;
+                  &:hover {
+                     background-color: rgba(255, 255, 255, 0.2);
+                  }
                }
             }
          }
@@ -986,7 +989,7 @@
                   .img-project {
                      @include pad(0,0);
                      @include span(12);
-                     height: 600px;
+                     height: 300px;
                   }
                }
                .name {

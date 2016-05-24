@@ -16,17 +16,17 @@
                      border: 1px solid #ffffff;
                      text-transform: uppercase;
                      color: $blanco;
+                     &:hover {
+                        background-color: rgba(255, 255, 255, 0.2);
+                     }
                   }
                }
             }
          }
       }
       .project-info {
-         overflow: hidden;
          background-color: $gris-oscuro;
          .right-info {
-            padding-bottom: 32767px;
-            margin-bottom: -32767px;
             color: $blanco;
          }
          .left-info {
@@ -265,8 +265,11 @@
             .right-info {
                @include pad(0,0);
                @include span(6 last);
-               padding: 1%;
-               font-size: 1rem;
+               padding: 5%;
+               font-size: 1.1rem;
+               .quotes {
+                  font-size: 1.45rem;
+               }
             }
          }
          .categories {

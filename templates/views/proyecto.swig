@@ -9,7 +9,7 @@
 		</div>
 		<div class="sections">
 			<ul class="nav">
-				<li><a href="/proyectos">Proyectos</a></li>
+				<li><a class="active" href="/proyectos">Proyectos</a></li>
 				<li><a href="/">Inicio</a></li>
 			</ul>
 		</div>
@@ -25,7 +25,7 @@
 						<div class="project-title">{{ data.proyecto.title }}</div>
 						<div class="slide-content">{{ data.proyecto.content.brief | safe }}</div>
 						<div class="slide-btn">
-							<a href="http://{{ data.proyecto.site_link }}">Ir al sitio</a>
+							<a href="http://{{ data.proyecto.site_link }}" target="_blank">Ir al sitio</a>
 						</div>
 					</div>
 				</div>
@@ -52,7 +52,7 @@
 				</div>
 				<div class="right-info">
 					<p>{{ data.proyecto.content.full | raw }}</p>
-					<p>{{ data.proyecto.content.quotes | safe }}</p>
+					<div class="quotes">{{ data.proyecto.content.quotes | safe }}</div>
 				</div>
 			</div>
 			<div class="categories">
@@ -60,7 +60,7 @@
 					{% for cat in data.proyecto.categories %}
 						<div class="categorie">
 							<img src="/images/categorias/{{ cat.classname }}.png" class="img-category">
-							<span class="label label-default">{{ cat.name }}</span>
+							<span class="span-cat">{{ cat.name }}</span>
 						</div>
 					{% endfor %}
 				{% endif %}

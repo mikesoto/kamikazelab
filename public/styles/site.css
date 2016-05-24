@@ -119,6 +119,7 @@ body {
         margin-left: 0;
         margin-right: 0; }
     .menu-kamikaze-home .sections {
+      display: block;
       width: 25%;
       float: right;
       margin-right: 0;
@@ -224,7 +225,7 @@ body {
         padding-top: 3%;
         margin-right: 10%; }
         .menu-kamikaze .sections li a {
-          font-size: 0.9rem; } }
+          font-size: 0.8rem; } }
 
 .fold {
   position: fixed;
@@ -569,6 +570,15 @@ body {
         border: 1px solid #ffffff;
         text-transform: uppercase;
         color: #fff; }
+        .container-fluid .projects .grid-projects .contenedor1 .goToProject a:hover,
+        .container-fluid .projects .grid-projects .contenedor2 .goToProject a:hover,
+        .container-fluid .projects .grid-projects .contenedor3 .goToProject a:hover,
+        .container-fluid .projects .grid-projects .contenedor4 .goToProject a:hover,
+        .container-fluid .projects .grid-projects .contenedor5 .goToProject a:hover,
+        .container-fluid .projects .grid-projects .contenedor6 .goToProject a:hover,
+        .container-fluid .projects .grid-projects .contenedor7 .goToProject a:hover,
+        .container-fluid .projects .grid-projects .contenedor8 .goToProject a:hover {
+          background-color: rgba(255, 255, 255, 0.2); }
 
 .container-fluid .projects-mobile {
   background-color: #2f2f2f; }
@@ -1526,7 +1536,7 @@ body {
               float: left;
               margin-left: 0;
               margin-right: 0;
-              height: 600px; }
+              height: 300px; }
           .container-fluid .projects .grid-projects .contenedor3 .name {
             width: 41.66667%;
             float: left;
@@ -1664,6 +1674,8 @@ body {
           border: 1px solid #ffffff;
           text-transform: uppercase;
           color: #fff; }
+          .container-projects .projects .grid-projects .project .goToProject a:hover {
+            background-color: rgba(255, 255, 255, 0.2); }
 
 @media (min-width: 0) {
   .container-projects {
@@ -1952,12 +1964,11 @@ body {
         border: 1px solid #ffffff;
         text-transform: uppercase;
         color: #fff; }
+        .container-project .project-page .project-slide .left .content-project .slide-btn a:hover {
+          background-color: rgba(255, 255, 255, 0.2); }
   .container-project .project-page .project-info {
-    overflow: hidden;
     background-color: #2f2f2f; }
     .container-project .project-page .project-info .right-info {
-      padding-bottom: 32767px;
-      margin-bottom: -32767px;
       color: #fff; }
     .container-project .project-page .project-info .left-info {
       padding-bottom: 32767px;
@@ -2312,8 +2323,10 @@ body {
           width: 50%;
           float: right;
           margin-right: 0;
-          padding: 1%;
-          font-size: 1rem; }
+          padding: 5%;
+          font-size: 1.1rem; }
+          .container-project .project-page .project-info .right-info .quotes {
+            font-size: 1.45rem; }
       .container-project .project-page .categories {
         padding-left: 8.33333%;
         padding-right: 8.33333%;
@@ -2353,6 +2366,9 @@ body {
     border: 1px solid #ffffff;
     text-transform: uppercase;
     color: #fff; }
+    .projects-btns .btn-prev a:hover,
+    .projects-btns .btn-next a:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
 
 @media (min-width: 0) {
   .projects-btns {
