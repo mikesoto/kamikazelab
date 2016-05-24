@@ -16,7 +16,7 @@
 	</div>
 	<div class="container-project">
 		<div class="project-page">
-			<div class="project-slide">
+			<div class="project-slide" style="background-color:{{ data.proyecto.backround_color}};">
 				<div class="left">
 					<div class="icon-agency">
 						<img src="/images/agencia.png" class="img-agency">

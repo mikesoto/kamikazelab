@@ -68,7 +68,7 @@
 					{% if filters.category and not data.category %}
 						<h3 class="text-muted">Invalid Category.</h3>
 					{% else %}
-						{% if data.proyectos.results.length %}
+						<!-- {% if data.proyectos.results.length %}
 							<h4 class="text-weight-normal">Showing
 								<strong>{{ data.proyectos.first }}</strong>
 								to
@@ -79,10 +79,10 @@
 							</h4>
 						{% else %}
 							<h4 class="text-weight-normal">Showing {{ utils.plural(data.proyectos.results.length, "* proyecto") }}.</h4>
-						{% endif %}
+						{% endif %} -->
 						<div class="grid-projects">
 							{% for proyecto in data.proyectos.results %}
-							<div class="project">
+							<div class="project" style="background-color:{{ proyecto.backround_color}};">
 								<div class="left">
 									<img src="/images/agencia.png" class="img-agency" alt="Icono de la agencia">
 								</div>
