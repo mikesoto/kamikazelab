@@ -11,7 +11,7 @@ exports = module.exports = function(req, res) {
 		proyecto: req.params.proyecto
 	};
 	locals.data = {
-		proyectos: []
+		prev_proyecto: ''
 	};
 	
 	// Load the current proyecto
@@ -24,21 +24,33 @@ exports = module.exports = function(req, res) {
 		
 		q.exec(function(err, result) {
 			locals.data.proyecto = result;
+		
+			//get previous proyecto
+			var qprev = keystone.list('Proyecto').model.find({
+				state: "published",
+				title: {$ne: result.title},
+				publishedDate: {$lt: result.publishedDate } }).sort('-publishedDate').limit(1);
+			qprev.exec(function(err, resultprev) {
+				if(resultprev[0]){
+					locals.data.prev_proyecto = resultprev[0];
+				}
+			});
+
+			//get next proyecto
+			var qnext = keystone.list('Proyecto').model.find({
+				state: "published",
+				title: {$ne: result.title},
+				publishedDate: {$gt: result.publishedDate } }).sort('publishedDate').limit(1);
+			qnext.exec(function(err, resultnext) {
+				locals.data.next_proyecto = resultnext[0];
+			});
+
+
 			next(err);
 		});
 		
-	});
-	
-	// Load other proyectos
-	view.on('init', function(next) {
 		
-		var q = keystone.list('Proyecto').model.find().where('state', 'published').sort('-publishedDate').populate('author').limit('10');
-		
-		q.exec(function(err, results) {
-			locals.data.proyectos = results;
-			next(err);
-		});
-		
+
 	});
 	
 	// Render the view
