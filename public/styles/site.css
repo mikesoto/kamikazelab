@@ -62,7 +62,7 @@ body {
     margin-left: 0;
     margin-right: 0; }
     .menu-kamikaze-home .logo {
-      padding-top: 8%;
+      padding-top: 25px;
       padding-left: 3%;
       width: 41.66667%;
       float: left; }
@@ -72,7 +72,16 @@ body {
         margin-left: 0;
         margin-right: 0; }
     .menu-kamikaze-home .sections-desktop {
-      display: none; } }
+      display: block;
+      width: 58.33333%;
+      float: right;
+      margin-right: 0;
+      padding-right: 3%; }
+      .menu-kamikaze-home .sections-desktop li {
+        padding-top: 3%;
+        margin-right: 10%; }
+        .menu-kamikaze-home .sections-desktop li a {
+          font-size: 0.7rem; } }
 
 @media (min-width: 768px) {
   .menu-kamikaze-home {
@@ -159,7 +168,7 @@ body {
     margin-left: 0;
     margin-right: 0; }
     .menu-kamikaze .logo {
-      padding-top: 8%;
+      padding-top: 25px;
       padding-left: 3%;
       width: 41.66667%;
       float: left; }
@@ -169,7 +178,16 @@ body {
         margin-left: 0;
         margin-right: 0; }
     .menu-kamikaze .sections {
-      display: none; } }
+      display: block;
+      width: 58.33333%;
+      float: right;
+      margin-right: 0;
+      padding-right: 3%; }
+      .menu-kamikaze .sections li {
+        padding-top: 3%;
+        margin-right: 10%; }
+        .menu-kamikaze .sections li a {
+          font-size: 0.7rem; } }
 
 @media (min-width: 768px) {
   .menu-kamikaze {
@@ -470,12 +488,14 @@ body {
     position: relative; }
     .container-fluid .what-we-do .areas-mobile .area .img-hover {
       display: none; }
-    .container-fluid .what-we-do .areas-mobile .area:hover .img-normal {
-      display: none; }
-    .container-fluid .what-we-do .areas-mobile .area:hover .img-hover {
-      display: block; }
-    .container-fluid .what-we-do .areas-mobile .area:hover .area-overlay {
-      display: none; }
+    .container-fluid .what-we-do .areas-mobile .area:hover {
+      cursor: pointer; }
+      .container-fluid .what-we-do .areas-mobile .area:hover .img-normal {
+        display: none; }
+      .container-fluid .what-we-do .areas-mobile .area:hover .img-hover {
+        display: block; }
+      .container-fluid .what-we-do .areas-mobile .area:hover .area-overlay {
+        display: none; }
   .container-fluid .what-we-do .areas-mobile .area-overlay {
     position: absolute;
     top: 0;
@@ -816,16 +836,16 @@ body {
               margin-left: 0;
               margin-right: 0; }
           .container-fluid .projects-mobile .grid-projects .project .name {
-            width: 41.66667%;
+            width: 50%;
             float: left;
             bottom: 15px;
             left: 0;
             padding-left: 0.5em;
             font-size: 0.9rem; }
           .container-fluid .projects-mobile .grid-projects .project .goToProject {
-            width: 41.66667%;
+            width: 50%;
             float: left;
-            bottom: -20%;
+            bottom: -22%;
             left: 0;
             padding-left: 0.5em;
             font-size: 0.8rem; } }

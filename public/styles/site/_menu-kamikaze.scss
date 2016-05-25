@@ -31,7 +31,7 @@
    @include susy-breakpoint($phone, $susy) {
       @include span(12);
       .logo {
-         padding-top: 8%;
+         padding-top: 25px;
          padding-left: 3%;
          @include span(5);
          img {
@@ -39,7 +39,16 @@
          }
       }
       .sections {
-         display: none;
+         display: block;
+         @include span(7 last);
+         padding-right: 3%;
+         li {
+            padding-top: 3%;
+            margin-right: 10%;
+            a {
+               font-size: 0.7rem;
+            }
+         }
       }
    }
    @include susy-breakpoint($tablet, $susy) {

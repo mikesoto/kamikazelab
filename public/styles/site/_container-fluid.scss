@@ -55,6 +55,7 @@
                display: none;
             }
             &:hover {
+               cursor: pointer;
                .img-normal {
                   display: none;
                }
@@ -366,15 +367,15 @@
                   }
                }
                .name {
-                  @include span(5);
+                  @include span(6);
                   bottom: 15px;
                   left: 0;
                   padding-left: 0.5em;
                   font-size: 0.9rem;
                }
                .goToProject {
-                  @include span(5);
-                  bottom: -20%;
+                  @include span(6);
+                  bottom: -22%;
                   left: 0;
                   padding-left: 0.5em;
                   font-size: 0.8rem;
