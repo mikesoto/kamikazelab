@@ -1990,9 +1990,6 @@ body {
     background-color: #2f2f2f; }
     .container-project .project-page .project-info .right-info {
       color: #fff; }
-    .container-project .project-page .project-info .left-info {
-      padding-bottom: 32767px;
-      margin-bottom: -32767px; }
   .container-project .project-page .categories {
     background-color: #000;
     color: #fff;
