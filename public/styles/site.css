@@ -697,13 +697,13 @@ body {
       .container-fluid .what-we-do .area__hover .description-bck {
         height: 70%; }
       .container-fluid .what-we-do .area__hover .title-txt {
-        top: 80%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -30%); }
+        transform: translate(-50%, -50%); }
       .container-fluid .what-we-do .area__hover .description-txt {
         top: 30%;
-        left: 50%;
-        transform: translate(-50%, -30%);
+        left: 25%;
+        transform: translate(-25%, -30%);
         font-size: 0.9rem; }
     .container-fluid .projects {
       width: 100%;
