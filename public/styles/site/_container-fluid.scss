@@ -32,6 +32,16 @@
       }
    }
    .what-we-do {
+      @include span(12);
+      background-color: $negro;
+      .areas {
+         @include span(12);
+         .area {
+
+         }
+      }
+   }
+   /*.what-we-do {
       background-color: $negro;
       .text {
          color: $blanco;
@@ -120,7 +130,7 @@
             }
          }
       }
-   }
+   }*/
    .projects {
       background-color: $gris-oscuro;
       .title {
@@ -225,7 +235,7 @@
                @include pad(1.5,1.5);
                @include span(12);
                background-color: $rojo-a;
-               padding-top: 25%;
+               padding-top: 5%;
                padding-bottom: 5%;
                .content-agency {
                   @include pad(0,0);
@@ -256,7 +266,7 @@
             }
          }
       }
-      .what-we-do {
+      /*.what-we-do {
          @include span(12);
          .text {
             @include span(12);
@@ -310,7 +320,7 @@
                }
             }
          }
-      }
+      }*/
       .projects {
          @include span(12);
          .title {
@@ -437,7 +447,7 @@
             }
          }
       }
-      .what-we-do {
+      /*.what-we-do {
          @include span(12);
          .text {
             @include span(12);
@@ -507,7 +517,7 @@
          .areas-mobile {
             display: none;
          }
-      }
+      }*/
       .projects-mobile {
          display: none;
       }
@@ -793,6 +803,22 @@
          }
       }
       .what-we-do {
+         .area {
+            @include gallery(3 of 12);
+            height: 40vw;
+            &__link {
+               background-size: cover;
+               background-position: center;
+               display: block;
+               width: 100%;
+               height: 100%;
+               position: relative;
+               color: transparent;
+               text-decoration: none;
+            }
+         }
+      }
+      /*.what-we-do {
          @include span(12);
          .text {
             @include span(12);
@@ -862,7 +888,7 @@
          .areas-mobile {
             display: none;
          }
-      }
+      }*/
       .projects-mobile {
          display: none;
       }

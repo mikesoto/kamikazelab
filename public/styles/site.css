@@ -452,190 +452,282 @@ body {
       width: 52px;
       height: 52px; } }
 
-.container-fluid .division {
-  height: 100%;
-  overflow: hidden; }
-  .container-fluid .division .division-wrapper {
-    position: relative; }
-  .container-fluid .division .img-division {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto; }
-  .container-fluid .division .division-overlay .agency .content-agency {
-    text-align: center; }
-  .container-fluid .division .division-overlay .lab .content-lab {
-    text-align: center; }
-  .container-fluid .division .division-overlay h2 {
-    text-transform: uppercase;
-    color: #fff; }
-  .container-fluid .division .division-overlay p {
-    color: #fff; }
-
-.container-fluid .what-we-do {
-  background-color: #000; }
-  .container-fluid .what-we-do .text {
-    color: #fff; }
-    .container-fluid .what-we-do .text .strategy-hover {
-      display: none; }
-    .container-fluid .what-we-do .text .experience-hover {
-      display: none; }
-    .container-fluid .what-we-do .text .develop-hover {
-      display: none; }
-    .container-fluid .what-we-do .text .rd-hover {
-      display: none; }
-  .container-fluid .what-we-do .areas-mobile .area {
-    position: relative; }
-    .container-fluid .what-we-do .areas-mobile .area .img-hover {
-      display: none; }
-    .container-fluid .what-we-do .areas-mobile .area:hover {
-      cursor: pointer; }
-      .container-fluid .what-we-do .areas-mobile .area:hover .img-normal {
-        display: none; }
-      .container-fluid .what-we-do .areas-mobile .area:hover .img-hover {
-        display: block; }
-      .container-fluid .what-we-do .areas-mobile .area:hover .area-overlay {
-        display: none; }
-  .container-fluid .what-we-do .areas-mobile .area-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: auto; }
-    .container-fluid .what-we-do .areas-mobile .area-overlay .area-text {
-      text-transform: uppercase;
-      color: #fff;
-      text-align: center; }
-    .container-fluid .what-we-do .areas-mobile .area-overlay .content-text {
-      color: #fff; }
-  .container-fluid .what-we-do .areas .area {
-    position: relative; }
-    .container-fluid .what-we-do .areas .area .img-hover {
-      display: none; }
-    .container-fluid .what-we-do .areas .area:hover .img-normal {
-      display: none; }
-    .container-fluid .what-we-do .areas .area:hover .img-hover {
-      display: block; }
-  .container-fluid .what-we-do .areas .area-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: auto;
-    z-index: 1; }
-    .container-fluid .what-we-do .areas .area-overlay:hover {
-      opacity: 0;
-      cursor: pointer; }
-    .container-fluid .what-we-do .areas .area-overlay .area-text {
-      text-transform: uppercase;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      text-align: center; }
-
-.container-fluid .projects {
-  background-color: #2f2f2f; }
-  .container-fluid .projects .title {
-    color: #fff; }
-    .container-fluid .projects .title a {
-      text-decoration: none;
-      color: #fff;
-      cursor: pointer; }
-  .container-fluid .projects .grid-projects .contenedor1,
-  .container-fluid .projects .grid-projects .contenedor2,
-  .container-fluid .projects .grid-projects .contenedor3,
-  .container-fluid .projects .grid-projects .contenedor4,
-  .container-fluid .projects .grid-projects .contenedor5,
-  .container-fluid .projects .grid-projects .contenedor6,
-  .container-fluid .projects .grid-projects .contenedor7,
-  .container-fluid .projects .grid-projects .contenedor8 {
-    position: relative;
+.container-fluid {
+  /*.what-we-do {
+      background-color: $negro;
+      .text {
+         color: $blanco;
+         .strategy-hover {
+            display: none;
+         }
+         .experience-hover {
+            display: none;
+         }
+         .develop-hover {
+            display: none;
+         }
+         .rd-hover {
+            display: none;
+         }
+      }
+      .areas-mobile {
+         .area {
+            position: relative;
+            .img-hover {
+               display: none;
+            }
+            &:hover {
+               cursor: pointer;
+               .img-normal {
+                  display: none;
+               }
+               .img-hover {
+                  display: block;
+               }
+               .area-overlay {
+                  display: none;
+               }
+            }
+         }
+         .area-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: auto;
+            .area-text {
+               text-transform: uppercase;
+               color: $blanco;
+               text-align: center;
+            }
+            .content-text {
+               color: $blanco;
+            }
+         }
+      }
+      .areas {
+         .area {
+            position: relative;
+            .img-hover {
+               display: none;
+            }
+            &:hover {
+               .img-normal {
+                  display: none;
+               }
+               .img-hover {
+                  display: block;
+               }
+            }
+         }
+         .area-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: auto;
+            z-index: 1;
+            &:hover{
+               opacity: 0;
+               cursor: pointer;
+            }
+            .area-text {
+               text-transform: uppercase;
+               color: $blanco;
+               position: absolute;
+               top: 50%;
+               text-align: center;
+            }
+         }
+      }
+   }*/ }
+  .container-fluid .division {
+    height: 100%;
     overflow: hidden; }
-    .container-fluid .projects .grid-projects .contenedor1 .name,
-    .container-fluid .projects .grid-projects .contenedor2 .name,
-    .container-fluid .projects .grid-projects .contenedor3 .name,
-    .container-fluid .projects .grid-projects .contenedor4 .name,
-    .container-fluid .projects .grid-projects .contenedor5 .name,
-    .container-fluid .projects .grid-projects .contenedor6 .name,
-    .container-fluid .projects .grid-projects .contenedor7 .name,
-    .container-fluid .projects .grid-projects .contenedor8 .name {
-      position: absolute;
-      color: #fff;
+    .container-fluid .division .division-wrapper {
+      position: relative; }
+    .container-fluid .division .img-division {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto; }
+    .container-fluid .division .division-overlay .agency .content-agency {
+      text-align: center; }
+    .container-fluid .division .division-overlay .lab .content-lab {
+      text-align: center; }
+    .container-fluid .division .division-overlay h2 {
       text-transform: uppercase;
-      -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
-      transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s; }
-    .container-fluid .projects .grid-projects .contenedor1 .goToProject,
-    .container-fluid .projects .grid-projects .contenedor2 .goToProject,
-    .container-fluid .projects .grid-projects .contenedor3 .goToProject,
-    .container-fluid .projects .grid-projects .contenedor4 .goToProject,
-    .container-fluid .projects .grid-projects .contenedor5 .goToProject,
-    .container-fluid .projects .grid-projects .contenedor6 .goToProject,
-    .container-fluid .projects .grid-projects .contenedor7 .goToProject,
-    .container-fluid .projects .grid-projects .contenedor8 .goToProject {
-      position: absolute;
-      -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
-      transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s; }
-      .container-fluid .projects .grid-projects .contenedor1 .goToProject a,
-      .container-fluid .projects .grid-projects .contenedor2 .goToProject a,
-      .container-fluid .projects .grid-projects .contenedor3 .goToProject a,
-      .container-fluid .projects .grid-projects .contenedor4 .goToProject a,
-      .container-fluid .projects .grid-projects .contenedor5 .goToProject a,
-      .container-fluid .projects .grid-projects .contenedor6 .goToProject a,
-      .container-fluid .projects .grid-projects .contenedor7 .goToProject a,
-      .container-fluid .projects .grid-projects .contenedor8 .goToProject a {
-        text-decoration: none;
-        padding: 6px 10px;
-        border: 1px solid #ffffff;
-        text-transform: uppercase;
-        color: #fff; }
-        .container-fluid .projects .grid-projects .contenedor1 .goToProject a:hover,
-        .container-fluid .projects .grid-projects .contenedor2 .goToProject a:hover,
-        .container-fluid .projects .grid-projects .contenedor3 .goToProject a:hover,
-        .container-fluid .projects .grid-projects .contenedor4 .goToProject a:hover,
-        .container-fluid .projects .grid-projects .contenedor5 .goToProject a:hover,
-        .container-fluid .projects .grid-projects .contenedor6 .goToProject a:hover,
-        .container-fluid .projects .grid-projects .contenedor7 .goToProject a:hover,
-        .container-fluid .projects .grid-projects .contenedor8 .goToProject a:hover {
-          background-color: rgba(255, 255, 255, 0.2); }
-
-.container-fluid .projects-mobile {
-  background-color: #2f2f2f; }
-  .container-fluid .projects-mobile .title {
-    color: #fff; }
-    .container-fluid .projects-mobile .title a {
-      text-decoration: none;
-      color: #fff;
-      cursor: pointer; }
-  .container-fluid .projects-mobile .grid-projects {
+      color: #fff; }
+    .container-fluid .division .division-overlay p {
+      color: #fff; }
+  .container-fluid .what-we-do {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #000; }
+    .container-fluid .what-we-do .areas {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+  .container-fluid .projects {
     background-color: #2f2f2f; }
-    .container-fluid .projects-mobile .grid-projects .project {
+    .container-fluid .projects .title {
+      color: #fff; }
+      .container-fluid .projects .title a {
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer; }
+    .container-fluid .projects .grid-projects .contenedor1,
+    .container-fluid .projects .grid-projects .contenedor2,
+    .container-fluid .projects .grid-projects .contenedor3,
+    .container-fluid .projects .grid-projects .contenedor4,
+    .container-fluid .projects .grid-projects .contenedor5,
+    .container-fluid .projects .grid-projects .contenedor6,
+    .container-fluid .projects .grid-projects .contenedor7,
+    .container-fluid .projects .grid-projects .contenedor8 {
       position: relative;
       overflow: hidden; }
-      .container-fluid .projects-mobile .grid-projects .project .name {
+      .container-fluid .projects .grid-projects .contenedor1 .name,
+      .container-fluid .projects .grid-projects .contenedor2 .name,
+      .container-fluid .projects .grid-projects .contenedor3 .name,
+      .container-fluid .projects .grid-projects .contenedor4 .name,
+      .container-fluid .projects .grid-projects .contenedor5 .name,
+      .container-fluid .projects .grid-projects .contenedor6 .name,
+      .container-fluid .projects .grid-projects .contenedor7 .name,
+      .container-fluid .projects .grid-projects .contenedor8 .name {
         position: absolute;
         color: #fff;
         text-transform: uppercase;
         -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
         transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s; }
-      .container-fluid .projects-mobile .grid-projects .project .goToProject {
+      .container-fluid .projects .grid-projects .contenedor1 .goToProject,
+      .container-fluid .projects .grid-projects .contenedor2 .goToProject,
+      .container-fluid .projects .grid-projects .contenedor3 .goToProject,
+      .container-fluid .projects .grid-projects .contenedor4 .goToProject,
+      .container-fluid .projects .grid-projects .contenedor5 .goToProject,
+      .container-fluid .projects .grid-projects .contenedor6 .goToProject,
+      .container-fluid .projects .grid-projects .contenedor7 .goToProject,
+      .container-fluid .projects .grid-projects .contenedor8 .goToProject {
         position: absolute;
         -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
         transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s; }
-        .container-fluid .projects-mobile .grid-projects .project .goToProject a {
+        .container-fluid .projects .grid-projects .contenedor1 .goToProject a,
+        .container-fluid .projects .grid-projects .contenedor2 .goToProject a,
+        .container-fluid .projects .grid-projects .contenedor3 .goToProject a,
+        .container-fluid .projects .grid-projects .contenedor4 .goToProject a,
+        .container-fluid .projects .grid-projects .contenedor5 .goToProject a,
+        .container-fluid .projects .grid-projects .contenedor6 .goToProject a,
+        .container-fluid .projects .grid-projects .contenedor7 .goToProject a,
+        .container-fluid .projects .grid-projects .contenedor8 .goToProject a {
           text-decoration: none;
           padding: 6px 10px;
           border: 1px solid #ffffff;
           text-transform: uppercase;
           color: #fff; }
+          .container-fluid .projects .grid-projects .contenedor1 .goToProject a:hover,
+          .container-fluid .projects .grid-projects .contenedor2 .goToProject a:hover,
+          .container-fluid .projects .grid-projects .contenedor3 .goToProject a:hover,
+          .container-fluid .projects .grid-projects .contenedor4 .goToProject a:hover,
+          .container-fluid .projects .grid-projects .contenedor5 .goToProject a:hover,
+          .container-fluid .projects .grid-projects .contenedor6 .goToProject a:hover,
+          .container-fluid .projects .grid-projects .contenedor7 .goToProject a:hover,
+          .container-fluid .projects .grid-projects .contenedor8 .goToProject a:hover {
+            background-color: rgba(255, 255, 255, 0.2); }
+  .container-fluid .projects-mobile {
+    background-color: #2f2f2f; }
+    .container-fluid .projects-mobile .title {
+      color: #fff; }
+      .container-fluid .projects-mobile .title a {
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer; }
+    .container-fluid .projects-mobile .grid-projects {
+      background-color: #2f2f2f; }
+      .container-fluid .projects-mobile .grid-projects .project {
+        position: relative;
+        overflow: hidden; }
+        .container-fluid .projects-mobile .grid-projects .project .name {
+          position: absolute;
+          color: #fff;
+          text-transform: uppercase;
+          -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+          transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s; }
+        .container-fluid .projects-mobile .grid-projects .project .goToProject {
+          position: absolute;
+          -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+          transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s; }
+          .container-fluid .projects-mobile .grid-projects .project .goToProject a {
+            text-decoration: none;
+            padding: 6px 10px;
+            border: 1px solid #ffffff;
+            text-transform: uppercase;
+            color: #fff; }
 
 @media (min-width: 0) {
   .container-fluid {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    /*.what-we-do {
+         @include span(12);
+         .text {
+            @include span(12);
+            height: 150px;
+            .default-text {
+               padding-top: 10%;
+               @include pad(0.5,0.5);
+               font-size: 1.5rem;
+            }
+            .strategy-hover {
+               padding-top: 2%;
+            }
+            .experience-hover{
+               padding-top: 5%;
+            }
+            .develop-hover{
+               padding-top: 5%;
+            }
+            .rd-hover {
+               padding-top: 5%;
+            }
+         }
+         .areas{
+            display: none;
+         }
+         .areas-mobile {
+            display: block;
+            @include span(12);
+            .area {
+               @include span(12);
+               .img-normal {
+                  @include span(12);
+               }
+               .img-hover {
+                  @include span(12);
+               }
+            }
+            .area-overlay {
+               @include span(12);
+               .area-text {
+                  @include span(12);
+                  font-size: 1.4rem;
+                  margin-top: 10%;
+                  margin-bottom: 5%;
+               }
+               .content-text {
+                  @include pad(1,1);
+                  @include span(12);
+                  text-align: center;
+                  font-size: 1.1rem;
+               }
+            }
+         }
+      }*/ }
     .container-fluid .division {
       width: 100%;
       float: left;
@@ -665,7 +757,7 @@ body {
           margin-left: 0;
           margin-right: 0;
           background-color: #d92830;
-          padding-top: 25%;
+          padding-top: 5%;
           padding-bottom: 5%; }
           .container-fluid .division .division-overlay .agency .content-agency {
             padding-left: 0%;
@@ -699,75 +791,6 @@ body {
           font-size: 1.3rem; }
         .container-fluid .division .division-overlay p {
           font-size: 0.9rem; }
-    .container-fluid .what-we-do {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0; }
-      .container-fluid .what-we-do .text {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0;
-        height: 150px; }
-        .container-fluid .what-we-do .text .default-text {
-          padding-top: 10%;
-          padding-left: 4.16667%;
-          padding-right: 4.16667%;
-          font-size: 1.5rem; }
-        .container-fluid .what-we-do .text .strategy-hover {
-          padding-top: 2%; }
-        .container-fluid .what-we-do .text .experience-hover {
-          padding-top: 5%; }
-        .container-fluid .what-we-do .text .develop-hover {
-          padding-top: 5%; }
-        .container-fluid .what-we-do .text .rd-hover {
-          padding-top: 5%; }
-      .container-fluid .what-we-do .areas {
-        display: none; }
-      .container-fluid .what-we-do .areas-mobile {
-        display: block;
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0; }
-        .container-fluid .what-we-do .areas-mobile .area {
-          width: 100%;
-          float: left;
-          margin-left: 0;
-          margin-right: 0; }
-          .container-fluid .what-we-do .areas-mobile .area .img-normal {
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0; }
-          .container-fluid .what-we-do .areas-mobile .area .img-hover {
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0; }
-        .container-fluid .what-we-do .areas-mobile .area-overlay {
-          width: 100%;
-          float: left;
-          margin-left: 0;
-          margin-right: 0; }
-          .container-fluid .what-we-do .areas-mobile .area-overlay .area-text {
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0;
-            font-size: 1.4rem;
-            margin-top: 10%;
-            margin-bottom: 5%; }
-          .container-fluid .what-we-do .areas-mobile .area-overlay .content-text {
-            padding-left: 8.33333%;
-            padding-right: 8.33333%;
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0;
-            text-align: center;
-            font-size: 1.1rem; }
     .container-fluid .projects {
       width: 100%;
       float: left;
@@ -855,7 +878,78 @@ body {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    /*.what-we-do {
+         @include span(12);
+         .text {
+            @include span(12);
+            height: 200px;
+            .default-text {
+               padding-top: 8%;
+               @include pad(0.5,0.5);
+               font-size: 1.2rem;
+            }
+            .area-hover {
+               @include pad(0.5,0.5);
+               @include span(11);
+               .area-icon {
+                  padding-left: 5%;
+                  @include span(2);
+                  img {
+                     width: 60px;
+                     height: 60px;
+                  }
+               }
+               .content-area {
+                  @include pad(1,0);
+                  @include span(10);
+                  .title-area {
+                     font-size: 1.2rem;
+                     text-transform: uppercase;
+                  }
+                  .content-text {
+                     font-size: 0.97rem;
+                  }
+               }
+            }
+            .strategy-hover {
+               padding-top: 2%;
+            }
+            .experience-hover{
+               padding-top: 5%;
+            }
+            .develop-hover{
+               padding-top: 5%;
+            }
+            .rd-hover {
+               padding-top: 5%;
+            }
+         }
+         .areas {
+            display: block;
+            @include span(12);
+            .area {
+               @include gallery(3);
+               .img-normal {
+                  @include span(12);
+               }
+               .img-hover {
+                  @include span(12);
+               }
+            }
+            .area-overlay {
+               @include span(12);
+               .area-text {
+                  @include span(12);
+                  font-size: 1.2rem;
+                  margin-top: -5%;
+               }
+            }
+         }
+         .areas-mobile {
+            display: none;
+         }
+      }*/ }
     .container-fluid .division {
       width: 100%;
       float: left;
@@ -918,102 +1012,6 @@ body {
           font-size: 1.25rem; }
         .container-fluid .division .division-overlay p {
           font-size: 1.0rem; }
-    .container-fluid .what-we-do {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0; }
-      .container-fluid .what-we-do .text {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0;
-        height: 200px; }
-        .container-fluid .what-we-do .text .default-text {
-          padding-top: 8%;
-          padding-left: 4.16667%;
-          padding-right: 4.16667%;
-          font-size: 1.2rem; }
-        .container-fluid .what-we-do .text .area-hover {
-          padding-left: 4.16667%;
-          padding-right: 4.16667%;
-          width: 91.66667%;
-          float: left; }
-          .container-fluid .what-we-do .text .area-hover .area-icon {
-            padding-left: 5%;
-            width: 16.66667%;
-            float: left; }
-            .container-fluid .what-we-do .text .area-hover .area-icon img {
-              width: 60px;
-              height: 60px; }
-          .container-fluid .what-we-do .text .area-hover .content-area {
-            padding-left: 8.33333%;
-            padding-right: 0%;
-            width: 83.33333%;
-            float: left; }
-            .container-fluid .what-we-do .text .area-hover .content-area .title-area {
-              font-size: 1.2rem;
-              text-transform: uppercase; }
-            .container-fluid .what-we-do .text .area-hover .content-area .content-text {
-              font-size: 0.97rem; }
-        .container-fluid .what-we-do .text .strategy-hover {
-          padding-top: 2%; }
-        .container-fluid .what-we-do .text .experience-hover {
-          padding-top: 5%; }
-        .container-fluid .what-we-do .text .develop-hover {
-          padding-top: 5%; }
-        .container-fluid .what-we-do .text .rd-hover {
-          padding-top: 5%; }
-      .container-fluid .what-we-do .areas {
-        display: block;
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0; }
-        .container-fluid .what-we-do .areas .area {
-          width: 25%;
-          float: left; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 1) {
-            margin-left: 0;
-            margin-right: -100%;
-            clear: both;
-            margin-left: 0; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 2) {
-            margin-left: 25%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 3) {
-            margin-left: 50%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 4) {
-            margin-left: 75%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .what-we-do .areas .area .img-normal {
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0; }
-          .container-fluid .what-we-do .areas .area .img-hover {
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0; }
-        .container-fluid .what-we-do .areas .area-overlay {
-          width: 100%;
-          float: left;
-          margin-left: 0;
-          margin-right: 0; }
-          .container-fluid .what-we-do .areas .area-overlay .area-text {
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0;
-            font-size: 1.2rem;
-            margin-top: -5%; }
-      .container-fluid .what-we-do .areas-mobile {
-        display: none; }
     .container-fluid .projects-mobile {
       display: none; }
     .container-fluid .projects {
@@ -1261,7 +1259,78 @@ body {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    /*.what-we-do {
+         @include span(12);
+         .text {
+            @include span(12);
+            height: 230px;
+            .default-text {
+               padding-top: 6%;
+               @include pad(0.5,0.5);
+               font-size: 1.5rem;
+            }
+            .area-hover {
+               @include pad(0.5,0.5);
+               @include span(11);
+               .area-icon {
+                  padding-left: 5%;
+                  @include span(3);
+                  img {
+                     width: 99px;
+                     height: 99px;
+                  }
+               }
+               .content-area {
+                  @include pad(0,0);
+                  @include span(9);
+                  .title-area {
+                     font-size: 1.3rem;
+                     text-transform: uppercase;
+                  }
+                  .content-text {
+                     font-size: 1.1rem;
+                  }
+               }
+            }
+            .strategy-hover {
+               padding-top: 2%;
+            }
+            .experience-hover{
+               padding-top: 5%;
+            }
+            .develop-hover{
+               padding-top: 5%;
+            }
+            .rd-hover {
+               padding-top: 5%;
+            }
+         }
+         .areas {
+            display: block;
+            @include span(12);
+            .area {
+               @include gallery(3);
+               .img-normal {
+                  @include span(12);
+               }
+               .img-hover {
+                  @include span(12);
+               }
+            }
+            .area-overlay {
+               @include span(12);
+               .area-text {
+                  @include span(12);
+                  font-size: 1.4rem;
+                  margin-top: -5%;
+               }
+            }
+         }
+         .areas-mobile {
+            display: none;
+         }
+      }*/ }
     .container-fluid .division {
       width: 100%;
       float: left;
@@ -1322,102 +1391,36 @@ body {
           font-size: 1.65rem; }
         .container-fluid .division .division-overlay p {
           font-size: 1.2rem; }
-    .container-fluid .what-we-do {
-      width: 100%;
+    .container-fluid .what-we-do .area {
+      width: 25%;
       float: left;
-      margin-left: 0;
-      margin-right: 0; }
-      .container-fluid .what-we-do .text {
-        width: 100%;
-        float: left;
+      height: 40vw; }
+      .container-fluid .what-we-do .area:nth-child(4n + 1) {
         margin-left: 0;
-        margin-right: 0;
-        height: 230px; }
-        .container-fluid .what-we-do .text .default-text {
-          padding-top: 6%;
-          padding-left: 4.16667%;
-          padding-right: 4.16667%;
-          font-size: 1.5rem; }
-        .container-fluid .what-we-do .text .area-hover {
-          padding-left: 4.16667%;
-          padding-right: 4.16667%;
-          width: 91.66667%;
-          float: left; }
-          .container-fluid .what-we-do .text .area-hover .area-icon {
-            padding-left: 5%;
-            width: 25%;
-            float: left; }
-            .container-fluid .what-we-do .text .area-hover .area-icon img {
-              width: 99px;
-              height: 99px; }
-          .container-fluid .what-we-do .text .area-hover .content-area {
-            padding-left: 0%;
-            padding-right: 0%;
-            width: 75%;
-            float: left; }
-            .container-fluid .what-we-do .text .area-hover .content-area .title-area {
-              font-size: 1.3rem;
-              text-transform: uppercase; }
-            .container-fluid .what-we-do .text .area-hover .content-area .content-text {
-              font-size: 1.1rem; }
-        .container-fluid .what-we-do .text .strategy-hover {
-          padding-top: 2%; }
-        .container-fluid .what-we-do .text .experience-hover {
-          padding-top: 5%; }
-        .container-fluid .what-we-do .text .develop-hover {
-          padding-top: 5%; }
-        .container-fluid .what-we-do .text .rd-hover {
-          padding-top: 5%; }
-      .container-fluid .what-we-do .areas {
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .container-fluid .what-we-do .area:nth-child(4n + 2) {
+        margin-left: 25%;
+        margin-right: -100%;
+        clear: none; }
+      .container-fluid .what-we-do .area:nth-child(4n + 3) {
+        margin-left: 50%;
+        margin-right: -100%;
+        clear: none; }
+      .container-fluid .what-we-do .area:nth-child(4n + 4) {
+        margin-left: 75%;
+        margin-right: -100%;
+        clear: none; }
+      .container-fluid .what-we-do .area__link {
+        background-size: cover;
+        background-position: center;
         display: block;
         width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0; }
-        .container-fluid .what-we-do .areas .area {
-          width: 25%;
-          float: left; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 1) {
-            margin-left: 0;
-            margin-right: -100%;
-            clear: both;
-            margin-left: 0; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 2) {
-            margin-left: 25%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 3) {
-            margin-left: 50%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .what-we-do .areas .area:nth-child(4n + 4) {
-            margin-left: 75%;
-            margin-right: -100%;
-            clear: none; }
-          .container-fluid .what-we-do .areas .area .img-normal {
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0; }
-          .container-fluid .what-we-do .areas .area .img-hover {
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0; }
-        .container-fluid .what-we-do .areas .area-overlay {
-          width: 100%;
-          float: left;
-          margin-left: 0;
-          margin-right: 0; }
-          .container-fluid .what-we-do .areas .area-overlay .area-text {
-            width: 100%;
-            float: left;
-            margin-left: 0;
-            margin-right: 0;
-            font-size: 1.4rem;
-            margin-top: -5%; }
-      .container-fluid .what-we-do .areas-mobile {
-        display: none; }
+        height: 100%;
+        position: relative;
+        color: transparent;
+        text-decoration: none; }
     .container-fluid .projects-mobile {
       display: none; }
     .container-fluid .projects {

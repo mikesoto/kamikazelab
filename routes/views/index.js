@@ -9,6 +9,7 @@ exports = module.exports = function(req, res) {
 	locals.data = {
 		video: '',
 		proyectos: [],
+		areas: []
 	};
 	
 	// locals.section is used to set the currently selected
@@ -40,6 +41,19 @@ exports = module.exports = function(req, res) {
 			next(err);
 		});
 		
+	});
+
+	view.on('init', function(next){
+		var q = keystone.list('Area').model.find().sort('-createdAt');
+		q.exec(function(err,results){
+			if (err) return res.err(err);
+			if (!results){
+				return res.status(404).render('errors/404');
+			}
+			locals.data.areas = results;
+			console.log(locals.data.areas);
+			next();
+		});
 	});
 
 

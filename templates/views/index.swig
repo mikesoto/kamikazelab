@@ -1,5 +1,22 @@
 {% extends "../layouts/default.swig" %}
 
+{% block css %}
+	<style type="text/css">
+		/*phone*/
+		@media all and (max-width: 767px){
+
+		}
+		/* Tablet */
+		@media all and (min-width: 768px ) and (max-width: 1199px){
+		}
+		/* Desktop */
+		@media all and (min-width: 1200px){
+			.area__link {
+				background-image: url(/images/areas/{{ area.background_desktop.filename }});
+			}
+		}
+	</style>
+{% endblock %}
 {% block content %}
 		<!-- header -->
 		<div class="menu-kamikaze-home">
@@ -58,7 +75,15 @@
 			</div>
 			<!-- what-we-do -->
 			<div class="what-we-do">
-				<div class="text">
+				<div class="areas">
+					{% for area in data.areas %}
+						<div class="area">
+							<div class="area__link" style="background-image: url(/images/areas/{{ area.background_desktop.filename }});">
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+				<!--<div class="text">
 					<h2 class="default-text">¿QUÉ HACEMOS?</h2>
 					<div class="strategy-hover area-hover">
 						<div class="area-icon">
@@ -110,8 +135,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="areas">
+				</div>-->
+				<!--<div class="areas">
 					<div class="area area-hover1">
 						<img src="images/hacemos/que-hacemos1.jpg" class="img-normal" alt="Área de Estrategia">
 						<img src="images/hacemos/que-hacemos1-hover.jpg" class="img-hover" alt="Área de Estrategia">
@@ -140,9 +165,9 @@
 							<div class="area-text">R&amp;D</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<!-- areas mobile -->
-				<div class="areas-mobile">
+				<!--<div class="areas-mobile">
 					<div class="area area-mobile-hover1">
 						<img src="images/hacemos/que-hacemos1.jpg" class="img-normal" alt="Área de Estrategia">
 						<img src="images/hacemos/que-hacemos1-hover.jpg" class="img-hover" alt="Área de Estrategia">
@@ -189,7 +214,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<!-- end areas mobile -->
 			</div>
 			<div class="projects">
