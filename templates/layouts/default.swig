@@ -159,7 +159,6 @@
 		{# Add scripts that are globally required by your site here. #}
 		<!-- <script src="js/main.js"></script> -->
 		<script src="/js/fold.js"></script>
-		<script src="/js/container-fluid.js"></script>
 		{# Include template-specific javascript files by extending the js block #}
 		{%- block js -%}{%- endblock -%}
 	</body>

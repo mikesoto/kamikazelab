@@ -44,7 +44,7 @@ exports = module.exports = function(req, res) {
 	});
 
 	view.on('init', function(next){
-		var q = keystone.list('Area').model.find().sort('-createdAt');
+		var q = keystone.list('Area').model.find().sort('createdAt').limit(4);
 		q.exec(function(err,results){
 			if (err) return res.err(err);
 			if (!results){

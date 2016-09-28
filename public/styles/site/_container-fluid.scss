@@ -37,100 +37,53 @@
       .areas {
          @include span(12);
          .area {
-
+            position: relative;
+            &__link {
+               background-size: cover;
+               background-position: center;
+               display: block;
+               width: 100%;
+               height: 100%;
+               position: relative;
+               color: transparent;
+               text-decoration: none;
+            }
+            &__title {
+               position: absolute;
+               margin: 0;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               color: $blanco;
+               text-transform: uppercase;
+               font-size: 1.25rem;
+            }
+            &__hover {
+               height: 100%;
+               .title-bck {
+                  position: relative;
+                  height: 15%;
+               }
+               .description-bck {
+                  position: relative;
+                  height: 85%;
+               }
+               .title-txt {
+                  position: absolute;
+                  margin: 0;
+                  color: $blanco;
+                  text-transform: uppercase;
+                  font-size: 1.15rem;
+               }
+               .description-txt {
+                  position: absolute;
+                  margin: 0;
+                  color: $blanco;
+               }
+            }
          }
       }
    }
-   /*.what-we-do {
-      background-color: $negro;
-      .text {
-         color: $blanco;
-         .strategy-hover {
-            display: none;
-         }
-         .experience-hover {
-            display: none;
-         }
-         .develop-hover {
-            display: none;
-         }
-         .rd-hover {
-            display: none;
-         }
-      }
-      .areas-mobile {
-         .area {
-            position: relative;
-            .img-hover {
-               display: none;
-            }
-            &:hover {
-               cursor: pointer;
-               .img-normal {
-                  display: none;
-               }
-               .img-hover {
-                  display: block;
-               }
-               .area-overlay {
-                  display: none;
-               }
-            }
-         }
-         .area-overlay {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: auto;
-            .area-text {
-               text-transform: uppercase;
-               color: $blanco;
-               text-align: center;
-            }
-            .content-text {
-               color: $blanco;
-            }
-         }
-      }
-      .areas {
-         .area {
-            position: relative;
-            .img-hover {
-               display: none;
-            }
-            &:hover {
-               .img-normal {
-                  display: none;
-               }
-               .img-hover {
-                  display: block;
-               }
-            }
-         }
-         .area-overlay {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: auto;
-            z-index: 1;
-            &:hover{
-               opacity: 0;
-               cursor: pointer;
-            }
-            .area-text {
-               text-transform: uppercase;
-               color: $blanco;
-               position: absolute;
-               top: 50%;
-               text-align: center;
-            }
-         }
-      }
-   }*/
    .projects {
       background-color: $gris-oscuro;
       .title {
@@ -266,61 +219,31 @@
             }
          }
       }
-      /*.what-we-do {
-         @include span(12);
-         .text {
+      .what-we-do {
+         .area {
             @include span(12);
-            height: 150px;
-            .default-text {
-               padding-top: 10%;
-               @include pad(0.5,0.5);
-               font-size: 1.5rem;
-            }
-            .strategy-hover {
-               padding-top: 2%;
-            }
-            .experience-hover{
-               padding-top: 5%;
-            }
-            .develop-hover{
-               padding-top: 5%;
-            }
-            .rd-hover {
-               padding-top: 5%;
-            }
-         }
-         .areas{
-            display: none;
-         }
-         .areas-mobile {
-            display: block;
-            @include span(12);
-            .area {
-               @include span(12);
-               .img-normal {
-                  @include span(12);
+            height: 75vw;
+            &__hover {
+               .title-bck {
+                  height: 30%;
                }
-               .img-hover {
-                  @include span(12);
+               .description-bck {
+                  height: 70%;
                }
-            }
-            .area-overlay {
-               @include span(12);
-               .area-text {
-                  @include span(12);
-                  font-size: 1.4rem;
-                  margin-top: 10%;
-                  margin-bottom: 5%;
+               .title-txt {
+                  top: 80%;
+                  left: 50%;
+                  transform: translate(-50%, -30%);
                }
-               .content-text {
-                  @include pad(1,1);
-                  @include span(12);
-                  text-align: center;
-                  font-size: 1.1rem;
+               .description-txt {
+                  top: 30%;
+                  left: 50%;
+                  transform: translate(-50%, -30%);
+                  font-size: 0.9rem;
                }
             }
          }
-      }*/
+      }
       .projects {
          @include span(12);
          .title {
@@ -447,77 +370,31 @@
             }
          }
       }
-      /*.what-we-do {
-         @include span(12);
-         .text {
-            @include span(12);
-            height: 200px;
-            .default-text {
-               padding-top: 8%;
-               @include pad(0.5,0.5);
-               font-size: 1.2rem;
-            }
-            .area-hover {
-               @include pad(0.5,0.5);
-               @include span(11);
-               .area-icon {
-                  padding-left: 5%;
-                  @include span(2);
-                  img {
-                     width: 60px;
-                     height: 60px;
-                  }
+      .what-we-do {
+         .area {
+            @include gallery(6 of 12);
+            height: 30vw;
+            &__hover {
+               .title-bck {
+                  height: 20%;
                }
-               .content-area {
-                  @include pad(1,0);
-                  @include span(10);
-                  .title-area {
-                     font-size: 1.2rem;
-                     text-transform: uppercase;
-                  }
-                  .content-text {
-                     font-size: 0.97rem;
-                  }
+               .description-bck {
+                  height: 80%;
                }
-            }
-            .strategy-hover {
-               padding-top: 2%;
-            }
-            .experience-hover{
-               padding-top: 5%;
-            }
-            .develop-hover{
-               padding-top: 5%;
-            }
-            .rd-hover {
-               padding-top: 5%;
-            }
-         }
-         .areas {
-            display: block;
-            @include span(12);
-            .area {
-               @include gallery(3);
-               .img-normal {
-                  @include span(12);
+               .title-txt {
+                  top: 10%;
+                  left: 50%;
+                  transform: translate(-50%, -10%);
                }
-               .img-hover {
-                  @include span(12);
-               }
-            }
-            .area-overlay {
-               @include span(12);
-               .area-text {
-                  @include span(12);
-                  font-size: 1.2rem;
-                  margin-top: -5%;
+               .description-txt {
+                  top: 30%;
+                  left: 25%;
+                  transform: translate(-25%, -30%);
+                  font-size: 0.9rem;
                }
             }
          }
-         .areas-mobile {
-            display: none;
-         }
-      }*/
+      }
       .projects-mobile {
          display: none;
       }
@@ -806,89 +683,27 @@
          .area {
             @include gallery(3 of 12);
             height: 40vw;
-            &__link {
-               background-size: cover;
-               background-position: center;
-               display: block;
-               width: 100%;
-               height: 100%;
-               position: relative;
-               color: transparent;
-               text-decoration: none;
+            &__hover {
+               .title-bck {
+                  height: 15%;
+               }
+               .description-bck {
+                  height: 85%;
+               }
+               .title-txt {
+                  top: 80%;
+                  left: 50%;
+                  transform: translate(-50%, -80%);
+               }
+               .description-txt {
+                  top: 25%;
+                  left: 35%;
+                  transform: translate(-35%, -25%);
+                  font-size: 1rem;
+               }
             }
          }
       }
-      /*.what-we-do {
-         @include span(12);
-         .text {
-            @include span(12);
-            height: 230px;
-            .default-text {
-               padding-top: 6%;
-               @include pad(0.5,0.5);
-               font-size: 1.5rem;
-            }
-            .area-hover {
-               @include pad(0.5,0.5);
-               @include span(11);
-               .area-icon {
-                  padding-left: 5%;
-                  @include span(3);
-                  img {
-                     width: 99px;
-                     height: 99px;
-                  }
-               }
-               .content-area {
-                  @include pad(0,0);
-                  @include span(9);
-                  .title-area {
-                     font-size: 1.3rem;
-                     text-transform: uppercase;
-                  }
-                  .content-text {
-                     font-size: 1.1rem;
-                  }
-               }
-            }
-            .strategy-hover {
-               padding-top: 2%;
-            }
-            .experience-hover{
-               padding-top: 5%;
-            }
-            .develop-hover{
-               padding-top: 5%;
-            }
-            .rd-hover {
-               padding-top: 5%;
-            }
-         }
-         .areas {
-            display: block;
-            @include span(12);
-            .area {
-               @include gallery(3);
-               .img-normal {
-                  @include span(12);
-               }
-               .img-hover {
-                  @include span(12);
-               }
-            }
-            .area-overlay {
-               @include span(12);
-               .area-text {
-                  @include span(12);
-                  font-size: 1.4rem;
-                  margin-top: -5%;
-               }
-            }
-         }
-         .areas-mobile {
-            display: none;
-         }
-      }*/
       .projects-mobile {
          display: none;
       }
