@@ -14,6 +14,25 @@
 				cursor: pointer;
 			}
 		{% endfor %}
+		/* Phone */
+		@media all and (max-width: 767px){
+			.video-wrapper {
+				background-image: url(/videos/alts/{{ data.video.alt_image_mobile.filename}})
+			}
+		}
+		/* Tablet */
+		@media all and (min-width: 768px ) and (max-width: 1199px){
+			.video-wrapper {
+				background-image: url(/videos/alts/{{ data.video.alt_image_tablet.filename}});
+			}
+		}
+		/* Desktop */
+		@media all and (min-width: 1200px){
+			.video-wrapper {
+				background: black;
+			}
+		}
+		
 	</style>
 {% endblock %}
 {% block content %}
@@ -35,8 +54,6 @@
 		<div class="fold">
 			<div class="video-wrapper">
 				<video id="videoId" class="background-video" src="/videos/{{ data.video.video.filename }}" autoplay="autoplay" loop="" muted="" poster=""></video>
-				<img src="/videos/alts/{{ data.video.alt_image_tablet.filename}}" class="img-tablet">
-				<img src="/videos/alts/{{ data.video.alt_image_mobile.filename}}" class="img-mobile">
 				<div class="video-overlay"></div>
 				<div class="fold-detail">
 					<img src="images/logo-kamikazelab-fold.png" class="img-logo">
@@ -57,14 +74,12 @@
 					<div class="division-overlay">
 						<div class="agency">
 							<div class="content-agency">
-								<!-- <img src="images/agencia.png" class="icon"> -->
 								<h2>Creativa</h2>
 								<p>Nuestras ideas buscan innovar en el mundo digital que cambia constantemente.</p>
 							</div>
 						</div>
 						<div class="lab">
 							<div class="content-lab">
-								<!-- <img src="images/lab.png" class="icon"> -->
 								<h2>Analítica</h2>
 								<p>Sustentadas por toda la información que nos da el mundo digital para poder hacer llegar el mensaje a la audiencia correcta.</p>
 							</div>
