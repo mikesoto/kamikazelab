@@ -47,17 +47,23 @@
 				<div class="content__title">
 					{{ data.area.section.main_title | safe }}
 				</div>
-				<div class="content__img">
+				<div class="content__img"></div>
+				<div class="content__text">
+					{{ data.area.section.bck_1_txt | safe }}
 				</div>
 			</div>
-			<!--<div class="bg-content__header">
-				<div class="bg-content__header__title">
-					<div class="title-text">
-						{{ data.area.section.main_title | safe }}
-					</div>
+			<div class="content bck-2">
+				<div class="content__img bck-2__img"></div>
+				<div class="content__text">
+					{{ data.area.section.bck_2_txt | safe }}
 				</div>
-				<div class="bg-content__header__img"></div>
-			</div>-->
+			</div>
+			<div class="content bck-3">
+				<div class="content__img bck-3__img"></div>
+				<div class="content__text bck-3__text">
+					{{ data.area.section.bck_3_txt | safe }}
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="projects-btns">

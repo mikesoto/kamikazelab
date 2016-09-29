@@ -22,45 +22,24 @@
         }
 	}
 	.content-bck {
-		@include pad(1.5,1.5);
 		@include span(12);
 		.content {
-			@include span(12);
-			margin: 6em 0;
 			position: relative;
+			@include span(12);
+			margin-bottom: 1.5em;
 			&__title {
-				@include span(8 of 12);
-				/*position: absolute;
-	           	margin: 0;
-	           	top: 50%;
-	           	left: 50%;
-	           	transform: translate(-50%, -50%);*/
 	           	color: $negro;
 	           	text-transform: uppercase;
 			}
 			&__img {
-				@include span(4 last of 12);
-				height: 20vw;
 				background-color: #8b0505;
 			}
+			&__text {
+				@include span(12);
+				text-align: justify;
+				margin: 1em 0;
+			}
 		}
-		/*&__header {
-			@include pad(1.5,1.5);
-			@include span(12);
-			position: relative;
-			&__title {
-				position: absolute;
-	           	margin: 0;
-	           	top: 50%;
-	           	left: 50%;
-	           	transform: translate(-50%, -50%);
-	           	color: $negro;
-	           	text-transform: uppercase;
-			}
-			&__img {
-				background-color: #8b0505; 
-			}
-		}*/
 	}
 }
 
@@ -72,12 +51,88 @@
 				font-size: 1.15rem;
 			}
 		}
+		.content-bck {
+			@include pad(0.5,0.5);
+			margin: 1.5em 0;
+			.content {
+				&__title {
+					@include span(12);
+					padding-top: 0;
+					font-size: 1.4rem;
+				}
+				&__img {
+					@include span(12);
+					height: 60vw;
+				}
+				&__text {
+					font-size: 0.85rem;
+				}
+			}
+			.bck-2 {
+				&__img {
+					@include span(12);
+					height: 50vw;
+				}
+			}
+			.bck-3 {
+				&__img {
+					@include span(12);
+					height: 50vw;
+				}
+				&__text {
+					@include span(12);
+					padding-left: 0;
+					margin: 0 0;
+					p {
+						margin: 1em 0;
+					}
+				}
+			}
+		}
 	}
 	@include susy-breakpoint($tablet, $susy) {
 		.bg-header {
 			height: 25vw;
 			&__title {
 				font-size: 1.35rem;
+			}
+		}
+		.content-bck {
+			@include pad(1,1);
+			margin: 3em 0;
+			.content {
+				&__title {
+					@include span(7 of 12);
+					padding-top: 0;
+					font-size: 1.4rem;
+				}
+				&__img {
+					@include span(5 last of 12);
+					height: 18vw;
+				}
+				&__text {
+					font-size: 0.85rem;
+				}
+			}
+			.bck-2 {
+				&__img {
+					@include span(12);
+					height: 18vw;
+				}
+			}
+			.bck-3 {
+				&__img {
+					@include span(6);
+					height: 18vw;
+				}
+				&__text {
+					@include span(6 last of 12);
+					padding-left: 1em;
+					margin: 0 0;
+					p {
+						margin: 0;
+					}
+				}
 			}
 		}
 	}
@@ -88,19 +143,41 @@
 				font-size: 1.5rem;
 			}
 		}
-		/*.bg-content {
-			&__header {
+		.content-bck {
+			@include pad(1.5,1.5);
+			margin: 6em 0;
+			.content {
 				&__title {
-					@include span(8 first);
-					.title-text {
-						font-size: 1.5rem;
-					}
+					@include span(7 of 12);
+					padding-top: 1.5em;
+					font-size: 1.8rem;
 				}
 				&__img {
-					@include span(4 last);
-					height: 20vw;
+					@include span(5 last of 12);
+					height: 18vw;
+				}
+				&__text {
+					font-size: 0.9rem;
+					margin: 2em 0;
 				}
 			}
-		}*/
+			.bck-2 {
+				&__img {
+					@include span(12);
+					height: 18vw;
+				}
+			}
+			.bck-3 {
+				&__img {
+					@include span(6);
+					height: 18vw;
+				}
+				&__text {
+					@include span(6 last of 12);
+					padding-left: 2em;
+					margin: 0 0;
+				}
+			}
+		}
 	}
 }

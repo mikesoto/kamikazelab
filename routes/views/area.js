@@ -25,7 +25,7 @@ exports = module.exports = function(req, res) {
 		
 		q.exec(function(err, result) {
 			locals.data.area = result;
-		
+			console.log(locals.data.area);
 			//get previous area
 			var qprev = keystone.list('Area').model.find({
 				state: "published",

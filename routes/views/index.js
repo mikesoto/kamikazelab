@@ -51,7 +51,6 @@ exports = module.exports = function(req, res) {
 				return res.status(404).render('errors/404');
 			}
 			locals.data.areas = results;
-			console.log(locals.data.areas);
 			next();
 		});
 	});
