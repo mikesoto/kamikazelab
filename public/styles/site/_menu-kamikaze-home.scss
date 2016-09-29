@@ -10,6 +10,9 @@
    z-index: 1000;
    -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+   .logo {
+      height: 100%;
+   }
    ul {
       list-style: none;
    }
@@ -21,8 +24,9 @@
             text-transform: uppercase;
             font-weight: bolder;
             color: #3d3d3d;
+            font-family: GothamMediumRegular;
             &.active {
-               color: #6c2026;
+               color: #c62026;
             }
          }
       }
@@ -33,16 +37,16 @@
    @include susy-breakpoint($phone, $susy) {
       @include span(12);
       .logo {
-         padding-top: 25px;
-         padding-left: 3%;
-         @include span(5);
+         padding-top: 1.6em;
+         padding-left: 1em;
+         @include span(4.5);
          img {
             @include span(12);
          }
       }
       .sections-desktop {
          display: block;
-         @include span(7 last);
+         @include span(7.5 last);
          padding-right: 3%;
          li {
             padding-top: 3%;
@@ -56,8 +60,8 @@
    @include susy-breakpoint($tablet, $susy) {
       @include span(12);
       .logo {
-         padding-top: 3%;
-         padding-left: 3%;
+         padding-top: 1.5em;
+         padding-left: 1.5em;
          @include span(3);
          img {
             @include span(12);
@@ -79,14 +83,15 @@
    @include susy-breakpoint($desktop, $susy) {
       @include span(12);
       .logo {
-         padding-top: 1.5%;
-         padding-left: 3%;
+         padding-top: 1.5em;
+         padding-left: 1.5em;
          @include span(2.2);
          img {
-            @include span(12);
+            max-width: 180px;
+            height: 21px;
          }
       }
-      .sections {
+      .sections-desktop {
          display: block;
          @include span(3 last);
          padding-right: 3%;

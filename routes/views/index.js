@@ -33,7 +33,7 @@ exports = module.exports = function(req, res) {
 					'state': 'published'
 				}
 			})
-			.sort('publishedDate')
+			.sort('createdAt')
 			.populate('author categories');
 		
 		q.exec(function(err, results) {
