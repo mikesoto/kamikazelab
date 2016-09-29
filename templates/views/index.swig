@@ -93,7 +93,7 @@
 				<div class="areas">
 					{% for area in data.areas %}
 						<div class="area">
-							<div class="area__link area-{{ loop.index }}">
+							<a href="/area/{{ area.slug }}" class="area__link area-{{ loop.index }}">
 								<div class="area__title area-{{ loop.index }}-title">
 									{{ area.title | safe }}
 								</div>
@@ -109,7 +109,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					{% endfor %}
 				</div>
